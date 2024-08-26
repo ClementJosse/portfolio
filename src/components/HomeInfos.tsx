@@ -17,14 +17,11 @@ export default function Canvas(): ReactElement {
                 <h1 className="salut">Salut, je suis</h1>
                 <h1 className="clement">Clément Josse</h1>
                 <h1 className="developpeur">Développeur Full-Stack</h1>
-                <h1 className="construis">Je construis des applications</h1>
-                <div className="avec">
-                    <h1>avec</h1>
-                    <h1 className="precision">précision</h1>
-                    <h1>et</h1>
-                    <h1 className="passion">passion</h1>
-                    <h1>🔥</h1>
+                <div className="construis">
+                    <h1>Je construis des applications</h1>
+                    <h1>avec <span className="precision">précision</span> et avec <span className="passion">passion</span> 🔥</h1>
                 </div>
+            
                 <div className="SocialIcons">
                     <img src={linkedin} alt="LinkedIn" className="icon" />
                     <img src={github} alt="GitHub" className="icon" />

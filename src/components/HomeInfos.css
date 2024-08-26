@@ -1,20 +1,30 @@
+.TextInfos > * {
+    margin-bottom: 15px; /* Ajoute une marge sous chaque élément enfant de TextInfos */
+}
+
+
 .HomeInfos {
     position: relative;
     z-index: 2;
-    font-family: 'Montserrat', sans-serif; /* Appliquer la police Montserrat */
-
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column; /* ou row selon la disposition souhaitée */
+    gap: 20px; /* Définit l'espacement entre les éléments enfants */
 }
-  
+
 .Split {
   display: flex;
-  align-items: center; 
-  gap: 20px;
+  position: relative;
+  align-items: center;
+  justify-content: center; 
+  gap: 40px;
 }
-
 
 .salut{
     color: #8FA9CA;
     font-size: 20px;
+    position: relative;
+    top: 15px; /* Déplace l'élément de 100px vers le bas */
 }
 
 .clement{
@@ -26,27 +36,14 @@
     color: #FFDC67;
     font-size: 30px;
 }
-.avec h1 {
-    margin: 0; /* Supprimer les marges qui pourraient agrandir la taille perçue */
-    padding: 0; /* Supprimer les paddings */
-    line-height: 1; /* Ajuster la hauteur de ligne pour qu'elle corresponde exactement à la taille de la police */
-}
 
 
 .construis{
     color:#8FA9CA;
-    font-size: 25px;
-}
-
-.avec {
-    display: flex;
-    align-items: center; 
-    color:#8FA9CA;
-    gap: 11px;
-}
-
-.avec h1{
-    font-size: 25px;
+    font-size: 10px;
+    line-height: 15px;
+    border-style: dotted;
+    border-color: rgba(255, 0, 0, 0);
 }
 
 .precision {
@@ -67,5 +64,5 @@
 }
 
 .SocialIcons .icon {
-    width: 45px;
+    width: 40px;
 }
