@@ -1,14 +1,14 @@
 import React, { ReactElement, useEffect } from 'react';
 import { renderCanvas } from './renderCanvas';
-
-export default function Hero(): ReactElement {
+import './Canvas.css'; 
+export default function Canvas(): ReactElement {
   useEffect(() => {
     renderCanvas();
   }, []);
 
   return (
-    <div>
-      <canvas className="tailed cursor" id="canvas"></canvas>
+    <div className="canvas-container">
+      <canvas className="canvas" id="canvas"></canvas>
     </div>
   );
 }

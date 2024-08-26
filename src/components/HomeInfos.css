@@ -1,0 +1,71 @@
+.HomeInfos {
+    position: relative;
+    z-index: 2;
+    font-family: 'Montserrat', sans-serif; /* Appliquer la police Montserrat */
+
+}
+  
+.Split {
+  display: flex;
+  align-items: center; 
+  gap: 20px;
+}
+
+
+.salut{
+    color: #8FA9CA;
+    font-size: 20px;
+}
+
+.clement{
+    color: #D4F0FA;
+    font-size: 45px;
+}
+
+.developpeur{
+    color: #FFDC67;
+    font-size: 30px;
+}
+.avec h1 {
+    margin: 0; /* Supprimer les marges qui pourraient agrandir la taille perçue */
+    padding: 0; /* Supprimer les paddings */
+    line-height: 1; /* Ajuster la hauteur de ligne pour qu'elle corresponde exactement à la taille de la police */
+}
+
+
+.construis{
+    color:#8FA9CA;
+    font-size: 25px;
+}
+
+.avec {
+    display: flex;
+    align-items: center; 
+    color:#8FA9CA;
+    gap: 11px;
+}
+
+.avec h1{
+    font-size: 25px;
+}
+
+.precision {
+    background: linear-gradient(to right, #FDDD22, #F532CD);
+    -webkit-text-fill-color: transparent; /* Utilisé pour les navigateurs WebKit */
+    background-clip: text; /* Pour la compatibilité */
+}
+
+.passion {
+    background: linear-gradient(to right, #FF4FFC, #00FFCC);
+    -webkit-text-fill-color: transparent; /* Utilisé pour les navigateurs WebKit */
+    background-clip: text; /* Pour la compatibilité */
+}
+
+.SocialIcons {
+    display: flex; 
+    gap: 15px; 
+}
+
+.SocialIcons .icon {
+    width: 45px;
+}

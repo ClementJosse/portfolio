@@ -137,11 +137,11 @@ var ctx,
   lines = [],
   E = {
     debug: true,
-    friction: 0.5,
-    trails: 30,
-    size: 30,
-    dampening: 0.25,
-    tension: 0.97,
+    friction: 0.5, 
+    trails: 20, // nombre de traits
+    size: 50, // temps avant suppression
+    dampening: 0.25, // amplification du mouvement
+    tension: 0.98,
   };
 function Node() {
   this.x = 0;

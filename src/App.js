@@ -1,10 +1,11 @@
 import React from 'react';
-import Hero from './components/Hero.tsx';
-
+import Canvas from './components/Canvas.tsx';
+import HomeInfos from './components/HomeInfos.tsx';
 function App() {
   return (
-    <div className="App">
-      <Hero />
+    <div className="canvas-container">
+      <HomeInfos className="home-infos"/>
+      <Canvas className="canvas"/>
     </div>
   );
 }
