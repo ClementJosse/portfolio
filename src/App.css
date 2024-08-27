@@ -1,3 +1,7 @@
+.main-page {
+  color: #D4F0FA;
+}
+
 .home-container {
   position: relative; /* Maintient la structure normale pour permettre à la div suivante de s'afficher */
   width: 100%;
@@ -12,18 +16,20 @@
 
 .experiences-container{
   height: 2000px;
+  background-color: #192651;
 }
 
 .projects-container{
   height: 2000px;
-  background-color: bisque;
+  background-color: #03062C;
 }
 
 .skills-container{
   height: 2000px;
+  background-color: #192651;
 }
 
 .contact-container{
   height: 2000px;
-  background-color: bisque;
+  background-color: #03062C;
 }

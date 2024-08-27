@@ -1,17 +1,40 @@
-.navbar-container{
+.navbar-container {
     display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
     z-index: 1000;
     width: 100%;
-    padding: 15px;
+    top: 20px;
     font-size: 10px;
-    gap: 30px;
+    gap: 17px;
     color: #D4F0FA;
 }
 
-.navbar-button{
+.navbar-button {
     cursor: pointer;
+    color: #D4F0FA;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    padding-inline: 15px;
+    padding-block: 10px;
+    border-radius: 50px;
+
 }
-  
+
+.navbar-button.active {
+    color: #03062C;
+    background-color: #FFDC67;
+    font-weight: 600;
+    transform: scale(1.0); /* Taille normale pour l'élément actif */
+}
+
+.navbar-button:hover {
+    color: #FFDC67;
+    transform: scale(1.08); /* Mise à l'échelle lors du survol */
+}
+
+.navbar-button.active:hover {
+    color: #03062C; /* Maintient la couleur actuelle lors du survol d'un élément actif */
+    transform: scale(1.08); /* Légère mise à l'échelle lors du survol */
+}
