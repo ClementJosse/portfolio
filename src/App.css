@@ -1,17 +1,20 @@
+
 .canvas-container {
   position: relative;
 }
 
 .home-infos {
   position: relative;
-  z-index: 2; /* Met HomeInfos devant Canvas */
 }
 
 .canvas {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1; /* Met Canvas derrière HomeInfos */
   width: 100%;  /* Ajuster si nécessaire */
   height: 100%; /* Ajuster si nécessaire */
+}
+
+.main-page {
+  user-select: text;
 }
