@@ -23,7 +23,7 @@ export default function Canvas(): ReactElement {
     <div className="HomeInfos">
         <div className="Split">
             <div className="ProfilePicture">
-                <img src={profilePicture} alt="Profile" style={{ width: '350px', height: 'auto', borderRadius: '50%' }} />
+                <img src={profilePicture} alt="Profile" style={{ width: '450px', height: 'auto', borderRadius: '50%' }} />
             </div>
             <div className="TextInfos">
                 <h1 className="salut">Salut, je suis</h1>

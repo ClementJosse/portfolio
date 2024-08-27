@@ -1,5 +1,5 @@
 .TextInfos > * {
-    margin-bottom: 35px; /* Ajoute une marge sous chaque élément enfant de TextInfos */
+    margin-bottom: 60px; /* Ajoute une marge sous chaque élément enfant de TextInfos */
 }
 
 .HomeInfos {
@@ -7,44 +7,47 @@
     z-index: 2;
     font-family: 'Montserrat';
     display: flex;
-    flex-direction: column; /* ou row selon la disposition souhaitée */
-    gap: 20px; /* Définit l'espacement entre les éléments enfants */
-    
+    flex-direction: column;
+    align-items: center;  /* Centre horizontalement le contenu */
+    justify-content: center;  /* Centre verticalement le contenu */
+    gap: 20px;
+    height: 100%;  /* Prend toute la hauteur du parent */
 }
+
 
 .Split {
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center; 
-  gap: 40px;
+  gap: 80px;
 }
 
 .salut{
     color: #8FA9CA;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 500;
     position: relative;
-    top: 15px; /* Déplace l'élément de 100px vers le bas */
+    top: 30px; /* Déplace l'élément de 100px vers le bas */
 }
 
 .clement{
     color: #D4F0FA;
-    font-size: 45px;
+    font-size: 70px;
     font-weight: 800;
     top: 15px;
 }
 
 .developpeur{
     color: #FFDC67;
-    font-size: 30px;
+    font-size: 55px;
     font-weight: 700;
     line-height: 20px;
 }
 
 .construis h1 {
     color: #8FA9CA;
-    font-size: 23px;
+    font-size: 35px;
     line-height: 15px;
     font-weight: 400;
 }
@@ -74,7 +77,6 @@
     cursor: pointer;
     height: 40px;
 }
-
 
 .SocialIcons .icon:hover {
     transform: scale(1.25);

@@ -7,7 +7,7 @@ export default function Canvas(): ReactElement {
   }, []);
 
   return (
-    <div className="canvas-container">
+    <div className="home-container">
       <canvas className="canvas" id="canvas"></canvas>
     </div>
   );
