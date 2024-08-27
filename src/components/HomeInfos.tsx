@@ -35,10 +35,10 @@ export default function Canvas(): ReactElement {
                 </div>
             
                 <div className="SocialIcons">
-                    <LinkedinIcon onClick={() => window.open("https://www.linkedin.com/in/clement-josse")} alt="LinkedIn" className="icon" />
-                    <GithubIcon onClick={() => window.open("https://github.com/ClementJosse")} alt="GitHub" className="icon" />
-                    <CvIcon onClick={() => window.open(cvPdf)} alt="CV" className="icon" />
-                    <EmailIcon onClick={copyToClipboard} alt="Email" className="icon" />
+                    <LinkedinIcon onClick={() => window.open("https://www.linkedin.com/in/clement-josse")} className="icon" />
+                    <GithubIcon onClick={() => window.open("https://github.com/ClementJosse")} className="icon" />
+                    <CvIcon onClick={() => window.open(cvPdf)} className="icon" />
+                    <EmailIcon onClick={copyToClipboard} className="icon" />
                 </div>
             </div>
         </div>

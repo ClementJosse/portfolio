@@ -3,15 +3,17 @@
 }
 
 .HomeInfos {
-    position: relative;
-    z-index: 2;
-    font-family: 'Montserrat';
+    position: absolute; /* Assure que HomeInfos est superposé au-dessus de Canvas */
+    z-index: 2; /* Assure que HomeInfos est au-dessus de Canvas */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Prend toute la hauteur de son parent (home-container) */
     display: flex;
     flex-direction: column;
-    align-items: center;  /* Centre horizontalement le contenu */
-    justify-content: center;  /* Centre verticalement le contenu */
+    align-items: center;
+    justify-content: center;
     gap: 20px;
-    height: 100%;  /* Prend toute la hauteur du parent */
 }
 
 

@@ -1,0 +1,29 @@
+.home-container {
+  position: relative; /* Maintient la structure normale pour permettre à la div suivante de s'afficher */
+  width: 100%;
+  min-height: 100vh; /* Prend toute la hauteur de la fenêtre */
+  z-index: 1;
+  background-color: #03062C;
+  background-image: url('assets/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.experiences-container{
+  height: 2000px;
+}
+
+.projects-container{
+  height: 2000px;
+  background-color: bisque;
+}
+
+.skills-container{
+  height: 2000px;
+}
+
+.contact-container{
+  height: 2000px;
+  background-color: bisque;
+}
