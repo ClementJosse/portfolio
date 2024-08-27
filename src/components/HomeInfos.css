@@ -1,12 +1,11 @@
 .TextInfos > * {
-    margin-bottom: 15px; /* Ajoute une marge sous chaque élément enfant de TextInfos */
+    margin-bottom: 35px; /* Ajoute une marge sous chaque élément enfant de TextInfos */
 }
-
 
 .HomeInfos {
     position: relative;
     z-index: 2;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     display: flex;
     flex-direction: column; /* ou row selon la disposition souhaitée */
     gap: 20px; /* Définit l'espacement entre les éléments enfants */
@@ -24,6 +23,7 @@
 .salut{
     color: #8FA9CA;
     font-size: 20px;
+    font-weight: 500;
     position: relative;
     top: 15px; /* Déplace l'élément de 100px vers le bas */
 }
@@ -31,37 +31,42 @@
 .clement{
     color: #D4F0FA;
     font-size: 45px;
+    font-weight: 800;
+    top: 15px;
 }
 
 .developpeur{
     color: #FFDC67;
     font-size: 30px;
+    font-weight: 700;
+    line-height: 20px;
 }
 
-
-.construis{
-    color:#8FA9CA;
-    font-size: 10px;
+.construis h1 {
+    color: #8FA9CA;
+    font-size: 25px;
     line-height: 15px;
-    border-style: dotted;
-    border-color: rgba(255, 0, 0, 0);
+    font-weight: 400;
 }
+
 
 .precision {
     background: linear-gradient(to right, #FFDC67, #F532CD);
     -webkit-text-fill-color: transparent; /* Utilisé pour les navigateurs WebKit */
     background-clip: text; /* Pour la compatibilité */
+    font-weight: 600;
 }
 
 .passion {
     background: linear-gradient(to right, #FF4FFC, #00FFCC);
     -webkit-text-fill-color: transparent; /* Utilisé pour les navigateurs WebKit */
     background-clip: text; /* Pour la compatibilité */
+    font-weight: 600;
 }
 
 .SocialIcons {
     display: flex; 
-    gap: 20px; 
+    gap: 30px; 
 }
 
 .SocialIcons .icon {
