@@ -1,7 +1,6 @@
 import React from 'react';
 import imgLysoft from '../../assets/Moss.png';
 import { ReactComponent as Java } from '../../assets/techno/Java.svg';
-import { ReactComponent as JUnit } from '../../assets/techno/JUnit.svg';
 import { ReactComponent as Maven } from '../../assets/techno/Maven.svg';
 import { ReactComponent as IntelliJ } from '../../assets/techno/IntelliJ.svg';
 import { ReactComponent as Bash } from '../../assets/techno/Bash.svg';
@@ -45,9 +44,6 @@ const Moss = () => {
             <div className='technos'>
             <CustomTooltip title="Java">
                   <Java className="icon"/>
-                </CustomTooltip>
-                <CustomTooltip title="JUnit">
-                  <JUnit className="icon"/>
                 </CustomTooltip>
                 <CustomTooltip title="Maven">
                   <Maven className="icon"/>
