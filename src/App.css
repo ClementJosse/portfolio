@@ -15,8 +15,14 @@
 }
 
 .experiences-container{
-  height: 2000px;
-  background-color: #192651;
+  background-color: #00113C;
+  background-image: linear-gradient(#0B185E 1px, transparent 1px), 
+                    linear-gradient(90deg, #0B185E 1px, transparent 1px);
+  background-size: 50px 50px; /* Ajustez la taille de la grille ici */
+  background-position: 0 0;
+  background-attachment: fixed; /* Garde la grille fixe lors du scroll */
+  width: 100%;
+  height: 100vh; 
 }
 
 .projects-container{

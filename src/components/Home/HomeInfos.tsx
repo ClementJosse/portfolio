@@ -1,11 +1,11 @@
 import React, { useState, ReactElement } from 'react';
-import CustomTooltip from './CustomTooltip.tsx';
-import profilePicture from '../assets/profile_picture.png';
-import { ReactComponent as LinkedinIcon } from '../assets/linkedin.svg';
-import { ReactComponent as GithubIcon } from '../assets/github.svg';
-import { ReactComponent as CvIcon } from '../assets/cv.svg';
-import { ReactComponent as EmailIcon } from '../assets/email.svg';
-import cvPdf from '../assets/CV - Clément Josse.pdf';
+import CustomTooltip from '../CustomTooltip.tsx';
+import profilePicture from '../../assets/profile_picture.png';
+import { ReactComponent as LinkedinIcon } from '../../assets/linkedin.svg';
+import { ReactComponent as GithubIcon } from '../../assets/github.svg';
+import { ReactComponent as CvIcon } from '../../assets/cv.svg';
+import { ReactComponent as EmailIcon } from '../../assets/email.svg';
+import cvPdf from '../../assets/CV - Clément Josse.pdf';
 import "./HomeInfos.css"
 
 export default function Canvas(): ReactElement {
