@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    padding: 20px;
+    padding: 40px;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -60,8 +60,32 @@
 }
 
 .technos {
-
+    display: flex;
+    gap: 30px;
 }
+
+.technos .icon {
+    width: 40px;
+    height: 40px;
+}
+
+.technos .icon:hover {
+    transform: scale(1.15);
+    filter: saturate(1.5);
+}
+
+.technos .icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.technos .icon path {
+    transition: fill 0.3s ease;
+}
+
+
+
 
 /* 
 début de responsive

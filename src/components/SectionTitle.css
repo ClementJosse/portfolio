@@ -1,8 +1,8 @@
 .section-title {
-    height: 150px;
+    height: 140px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     font-size: 40px;
     font-weight: 600;
 }

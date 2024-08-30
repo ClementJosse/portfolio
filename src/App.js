@@ -4,6 +4,7 @@ import HomeInfos from './components/Home/HomeInfos.tsx';
 import Navbar from './components/Navbar.tsx';
 import SectionTitle from './components/SectionTitle.tsx';
 import Lysoft from './components/Experience/Lysoft.tsx';
+import Moss from './components/Experience/Moss.tsx';
 
 import "./App.css"; 
 
@@ -30,6 +31,7 @@ function App() {
       <div className="experiences-container" ref={experiencesRef}>
         <SectionTitle title={"Mes Éxpériences"}/>
         <Lysoft/>
+        <Moss/>
       </div>
 
       <div className="projects-container" ref={projectsRef}>Projects container</div>
