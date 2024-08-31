@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 
-function Navbar({ scrollToSection, homeRef, experiencesRef, projectsRef, skillsRef, contactRef }) {
+function Navbar({ scrollToSection, homeRef, experiencesRef, projectsRef, competencesRef}) {
   const [activeSection, setActiveSection] = useState('home'); // Initialiser avec "home"
 
   // Utilisez useEffect pour surveiller le scroll et mettre à jour la section active
@@ -11,8 +11,7 @@ function Navbar({ scrollToSection, homeRef, experiencesRef, projectsRef, skillsR
         { ref: homeRef, name: 'home' },
         { ref: experiencesRef, name: 'experiences' },
         { ref: projectsRef, name: 'projects' },
-        { ref: skillsRef, name: 'skills' },
-        { ref: contactRef, name: 'contact' }
+        { ref: competencesRef, name: 'competences' }
       ];
 
       let maxVisibleSection = null;
@@ -41,7 +40,7 @@ function Navbar({ scrollToSection, homeRef, experiencesRef, projectsRef, skillsR
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', handleScroll);
     };
-  }, [homeRef, experiencesRef, projectsRef, skillsRef, contactRef, activeSection]);
+  }, [homeRef, experiencesRef, projectsRef, competencesRef, activeSection]);
 
   return (
     <div className='navbar-container'>
@@ -64,16 +63,10 @@ function Navbar({ scrollToSection, homeRef, experiencesRef, projectsRef, skillsR
         Projets
       </h1>
       <h1
-        className={`navbar-button ${activeSection === 'skills' ? 'active' : ''}`}
-        onClick={() => scrollToSection(skillsRef)}
+        className={`navbar-button ${activeSection === 'competences' ? 'active' : ''}`}
+        onClick={() => scrollToSection(competencesRef)}
       >
-        Skills
-      </h1>
-      <h1
-        className={`navbar-button ${activeSection === 'contact' ? 'active' : ''}`}
-        onClick={() => scrollToSection(contactRef)}
-      >
-        Contact
+        Compétences
       </h1>
     </div>
   );

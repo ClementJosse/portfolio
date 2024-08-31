@@ -12,8 +12,7 @@ function App() {
   const homeRef = useRef(null);
   const experiencesRef = useRef(null);
   const projectsRef = useRef(null);
-  const skillsRef = useRef(null);
-  const contactRef = useRef(null);
+  const competencesRef = useRef(null);
 
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({ behavior: 'smooth' });
@@ -21,7 +20,7 @@ function App() {
 
   return (
     <div className="main-page">
-      <Navbar scrollToSection={scrollToSection} homeRef={homeRef} experiencesRef={experiencesRef} projectsRef={projectsRef} skillsRef={skillsRef} contactRef={contactRef} />
+      <Navbar scrollToSection={scrollToSection} homeRef={homeRef} experiencesRef={experiencesRef} projectsRef={projectsRef} competencesRef={competencesRef} />
       
       <div className="home-container" ref={homeRef}>
         <Canvas className="canvas"/>
@@ -35,8 +34,8 @@ function App() {
       </div>
 
       <div className="projects-container" ref={projectsRef}>Projects container</div>
-      <div className="skills-container" ref={skillsRef}>Skills container</div>
-      <div className="contact-container" ref={contactRef}>Contact container</div>
+      <div className="competences-container" ref={competencesRef}>Competences container</div>
+      <div className="contact-footer" >Contact footer</div>
     </div>
   );
 }

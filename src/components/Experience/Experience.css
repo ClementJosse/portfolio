@@ -71,7 +71,7 @@
 
 .technos .icon:hover {
     transform: scale(1.15);
-    filter: saturate(1.5);
+    filter: saturate(2);
 }
 
 .technos .icon {
