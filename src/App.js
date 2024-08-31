@@ -33,7 +33,9 @@ function App() {
         <Moss/>
       </div>
 
-      <div className="projects-container" ref={projectsRef}>Projects container</div>
+      <div className="projects-container" ref={projectsRef}>
+        <SectionTitle title={"Mes Projets"}/>
+      </div>
       <div className="competences-container" ref={competencesRef}>Competences container</div>
       <div className="contact-footer" >Contact footer</div>
     </div>

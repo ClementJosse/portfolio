@@ -25,9 +25,11 @@
   height: 1300px; 
 }
 
-.projects-container{
+.projects-container {
   height: 2000px;
-  background-color: #03062C;
+  background: radial-gradient(circle, #01407B 0%, #001B55 50%, #070027 100%);
+  position: relative; /* Nécessaire pour le positionnement des couches parallaxe */
+  overflow: hidden; /* Assure que les couches parallaxe ne débordent pas */
 }
 
 .competences-container{
