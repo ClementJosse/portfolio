@@ -9,6 +9,7 @@ import { ReactComponent as Python } from '../../assets/techno/Python.svg';
 import { ReactComponent as Bash } from '../../assets/techno/Bash.svg';
 import { ReactComponent as Git } from '../../assets/techno/Git.svg';
 import CustomTooltip from '../CustomTooltip.tsx';
+import YBoldText from '../YBoldText.tsx';
 import "../SectionTitle.css";
 import "./Experience.css"
 
@@ -27,13 +28,13 @@ const Lysoft = () => {
                         <h1>Plan-les-Ouates, Genève 🇨🇭</h1>
                     </div>
                     <div className="experience-bulletpoints">
-                        <h1>• Création d’un outil de traduction avec un Scanner et un Parseur</h1>
-                        <h1>• Utilisation de linters pour améliorer la qualité du code</h1>
-                        <h1>• Utilisation approfondie du débogueur sur IntelliJ</h1>
-                        <h1>• Écriture de scripts automatisant la compilation du projet</h1>
-                        <h1>• Amélioration de la vitesse de génération des fichiers source</h1>
-                        <h1>• Visualisation dans une interface web des données du projet</h1>
-                        <h1>• Écriture de tests unitaires et de tests de non-régression</h1>
+                        <h1>• Création d’un outil de traduction avec un <YBoldText text="Scanner"/> et un <YBoldText text="Parser"/></h1>
+                        <h1>• Utilisation de <YBoldText text="linters"/> pour améliorer la <YBoldText text="qualité"/> du code</h1>
+                        <h1>• <YBoldText text="Amélioration"/> de la <YBoldText text="vitesse"/> de génération des fichiers source</h1>
+                        <h1>• Utilisation d'outils de <YBoldText text="Data Visualization"/> pour la prise de décision</h1>
+                        <h1>• Écriture de <YBoldText text="scripts automatisant"/> la compilation du projet</h1>
+                        <h1>• Utilisation approfondie du <YBoldText text="débugger"/> sur IntelliJ </h1>
+                        <h1>• Écriture de <YBoldText text="tests unitaires"/> et de tests de <YBoldText text="non-régression"/></h1>
                     </div>
                 </div>
                 <div className="image-entreprise">
