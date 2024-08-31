@@ -7,6 +7,7 @@ import Lysoft from './components/Experience/Lysoft.tsx';
 import Moss from './components/Experience/Moss.tsx';
 
 import "./App.css"; 
+import MultiLayerParallax from './components/Projets/MultiLayerParallax.tsx';
 
 function App() {
   const homeRef = useRef(null);
@@ -34,6 +35,7 @@ function App() {
       </div>
 
       <div className="projects-container" ref={projectsRef}>
+        <MultiLayerParallax/>
         <SectionTitle title={"Mes Projets"}/>
       </div>
       <div className="competences-container" ref={competencesRef}>Competences container</div>

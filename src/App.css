@@ -41,3 +41,7 @@
   height: 2000px;
   background-color: #03062C;
 }
+
+.titres-section{
+  z-index: 5;
+}
