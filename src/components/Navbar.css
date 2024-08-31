@@ -1,20 +1,26 @@
 .navbar-container {
-    display: flex;
+    display: inline-flex; /* Change de flex à inline-flex pour que le conteneur ne prenne que l'espace nécessaire */
     align-items: center;
     justify-content: center;
     position: fixed;
+    top: 15px;
     z-index: 1000;
-    width: 100%;
-    top: 10px;
     font-size: 10px;
     gap: 17px;
     color: #D4F0FA;
+    backdrop-filter: blur(4px);
+    padding: 0px 15px; /* Ajoute du padding pour rendre le conteneur plus esthétique */
+    left: 50%; /* Place la navbar au milieu horizontalement */
+    transform: translateX(-50%); /* Centre la navbar en utilisant une transformation */
+    background-color: #03062C88;
+    border-radius: 50px;
 }
+
 
 .navbar-button {
     cursor: pointer;
     color: #D4F0FA;
-    font-weight: 500;
+    font-weight: 600;
     transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
     padding-inline: 15px;
     padding-block: 10px;
@@ -25,7 +31,6 @@
 .navbar-button.active {
     color: #03062C;
     background-color: #FFDC67;
-    font-weight: 600;
     transform: scale(1.0); /* Taille normale pour l'élément actif */
 }
 
