@@ -23,8 +23,8 @@ const Santorini = () => {
                 </div>
                 <div className='description-projet'>
                     <h1><YBoldText text="Recréation"/> du boardgame Santorini,</h1> 
-                    <h1><YBoldText text="Développement"/> d’un système de</h1> 
-                    <h1><YBoldText text="Multijoueur"/> en ligne en <YBoldText text="temps réel"/></h1>
+                    <h1><YBoldText text="développement"/> d’un système de</h1> 
+                    <h1><YBoldText text="multijoueur"/> en ligne en <YBoldText text="temps réel"/></h1>
                 </div>
                 <div className='techno-projet'>
                     <CustomTooltip title="React Native">

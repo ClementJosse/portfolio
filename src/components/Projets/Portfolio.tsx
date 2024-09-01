@@ -6,7 +6,6 @@ import CustomTooltip from '../CustomTooltip.tsx';
 import { ReactComponent as Figma } from '../../assets/techno/Figma.svg';
 import { ReactComponent as NodeJS } from '../../assets/techno/NodeJS.svg';
 import { ReactComponent as Reactlogo } from '../../assets/techno/React.svg';
-import { ReactComponent as Tailwind } from '../../assets/techno/Tailwind.svg';
 import { ReactComponent as Hostinger } from '../../assets/techno/Hostinger.svg';
 
 const Portfolio = () => {
@@ -36,9 +35,6 @@ const Portfolio = () => {
                     </CustomTooltip>
                     <CustomTooltip title="React">
                       <Reactlogo className="icon"/>
-                    </CustomTooltip>
-                    <CustomTooltip title="Tailwind">
-                      <Tailwind className="icon"/>
                     </CustomTooltip>
                     <CustomTooltip title="Hostinger">
                       <Hostinger className="icon"/>
