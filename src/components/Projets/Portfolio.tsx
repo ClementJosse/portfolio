@@ -4,7 +4,7 @@ import imageProjet from '../../assets/projets/portfolio.png';
 import YBoldText from '../YBoldText.tsx';
 import CustomTooltip from '../CustomTooltip.tsx';
 import { ReactComponent as Figma } from '../../assets/techno/Figma.svg';
-import { ReactComponent as TypeScript } from '../../assets/techno/TypeScript.svg';
+import { ReactComponent as NodeJS } from '../../assets/techno/NodeJS.svg';
 import { ReactComponent as Reactlogo } from '../../assets/techno/React.svg';
 import { ReactComponent as Tailwind } from '../../assets/techno/Tailwind.svg';
 import { ReactComponent as Hostinger } from '../../assets/techno/Hostinger.svg';
@@ -31,8 +31,8 @@ const Portfolio = () => {
                     <CustomTooltip title="Figma">
                       <Figma className="icon"/>
                     </CustomTooltip>
-                    <CustomTooltip title="TypeScript">
-                      <TypeScript className="icon"/>
+                    <CustomTooltip title="NodeJS">
+                      <NodeJS className="icon"/>
                     </CustomTooltip>
                     <CustomTooltip title="React">
                       <Reactlogo className="icon"/>
