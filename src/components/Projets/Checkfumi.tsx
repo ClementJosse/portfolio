@@ -5,8 +5,7 @@ import YBoldText from '../YBoldText.tsx';
 import CustomTooltip from '../CustomTooltip.tsx';
 import { ReactComponent as Java } from '../../assets/techno/Java.svg';
 import { ReactComponent as AndroidStudio } from '../../assets/techno/AndroidStudio.svg';
-import { ReactComponent as NodeJS } from '../../assets/techno/NodeJS.svg';
-import { ReactComponent as Expo } from '../../assets/techno/Expo.svg';
+import { ReactComponent as PlayStore } from '../../assets/techno/PlayStore.svg';
 
 const Checkfumi = () => {
     return (
@@ -32,6 +31,9 @@ const Checkfumi = () => {
                     </CustomTooltip>
                     <CustomTooltip title="Android Studio">
                       <AndroidStudio className="icon"/>
+                    </CustomTooltip>
+                    <CustomTooltip title="Play Store">
+                      <PlayStore className="icon"/>
                     </CustomTooltip>
                 </div>
             </div>
