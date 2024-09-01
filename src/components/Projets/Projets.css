@@ -8,6 +8,7 @@
     border-radius: 20px;
     transition: transform 0.3s ease;
     overflow: hidden; /* Assure que l'image ne déborde pas des bordures arrondies */
+    backdrop-filter: blur(4px);
 }
 
 .project-card:hover {
