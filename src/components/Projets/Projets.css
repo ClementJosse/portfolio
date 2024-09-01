@@ -1,0 +1,103 @@
+.project-card {
+    width: 380px;
+    height: 480px;
+    background-color: #03062CCC; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre horizontalement tous les éléments */
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    overflow: hidden; /* Assure que l'image ne déborde pas des bordures arrondies */
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.image-projet img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.texte-projet {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Ajoute un espace vertical de 15px entre tous les éléments enfants */
+}
+
+.date-projet h1, 
+.titre-projet h1, 
+.description-projet h1 {
+    font-size: 18px;
+    font-weight: 200;
+    color: #D4F0FA;
+    margin: 5px 0;
+    text-align: center; /* Assure que le texte soit centré */
+}
+
+/* Spécifique pour chaque section */
+.date-projet h1 {
+    font-size: 18px;
+    font-weight: 200;
+    height: 5px;
+}
+
+.titre-projet h1 {
+    font-size: 30px;
+    font-weight: 600;
+    height: 30px;
+}
+
+.description-projet {
+    width: 100%;
+}
+
+.description-projet h1 {
+    color: #8FA9CA;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+    margin: 0 0;
+    height: 30px; /* Vous pouvez ajuster la hauteur si nécessaire */
+}
+
+.description-projet h1::after {
+    content: ""; /* Ajoute un contenu vide */
+    display: inline-block;
+    width: 100%; /* Force la justification sur toute la ligne */
+    height: 0;
+}
+
+
+.techno-projet {
+    padding-top: 5px;
+    display: flex;
+    gap: 25px;
+    justify-content: center; /* Centre les icônes horizontalement */
+    align-items: center; /* Centre les icônes verticalement si nécessaire */
+    width: 100%; /* Assure que le conteneur prend toute la largeur disponible */
+}
+
+.techno-projet .icon {
+    width: 40px;
+    height: 40px;
+}
+
+.techno-projet .icon:hover {
+    transform: scale(1.15);
+    filter: saturate(2);
+}
+
+.techno-projet .icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.techno-projet .icon path {
+    transition: fill 0.3s ease;
+}

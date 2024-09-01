@@ -3,8 +3,16 @@ import Canvas from './components/Home/Canvas.tsx';
 import HomeInfos from './components/Home/HomeInfos.tsx';
 import Navbar from './components/Navbar.tsx';
 import SectionTitle from './components/SectionTitle.tsx';
+
 import Lysoft from './components/Experience/Lysoft.tsx';
 import Moss from './components/Experience/Moss.tsx';
+
+import Portfolio from './components/Projets/Portfolio.tsx';
+import Citymo from './components/Projets/Citymo.tsx';
+import Velib from './components/Projets/Velib.tsx';
+import Santorini from './components/Projets/Santorini.tsx';
+import Checkfumi from './components/Projets/Checkfumi.tsx';
+import Autres from './components/Projets/Autres.tsx';
 
 import "./App.css"; 
 import MultiLayerParallax from './components/Projets/MultiLayerParallax.tsx';
@@ -37,6 +45,14 @@ function App() {
       <div className="projects-container" ref={projectsRef}>
         <MultiLayerParallax/>
         <SectionTitle title={"Mes Projets"}/>
+        <div className='projects-list'>
+          <Portfolio/>
+          <Citymo/>
+          <Velib/>
+          <Santorini/>
+          <Checkfumi/>
+          <Autres/>
+        </div>
       </div>
       <div className="competences-container" ref={competencesRef}>Competences container</div>
       <div className="contact-footer" >Contact footer</div>

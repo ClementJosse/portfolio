@@ -26,10 +26,19 @@
 }
 
 .projects-container {
-  height: 2000px;
+  height: 1350px;
   background: radial-gradient(circle, #01407B 0%, #001B55 50%, #070027 100%);
   position: relative; /* Nécessaire pour le positionnement des couches parallaxe */
   overflow: hidden; /* Assure que les couches parallaxe ne débordent pas */
+}
+
+.projects-list {
+  display: grid;
+  justify-content: center; /* Centre les cartes au centre horizontalement */
+  grid-template-columns: repeat(3, 380px); /* 3 colonnes de largeur égale */
+  gap: 30px; /* Espace entre les divs enfants */
+  position: relative;
+  padding: 40px
 }
 
 .competences-container{
