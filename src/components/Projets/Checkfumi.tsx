@@ -23,7 +23,7 @@ const Checkfumi = () => {
                 </div>
                 <div className='description-projet'>
                     <h1><YBoldText text="Création du jeu"/> et ses règles, <YBoldText text="design"/></h1> 
-                    <h1>et <YBoldText text="séveloppement"/>, <YBoldText text="multijoueur"/></h1> 
+                    <h1>et <YBoldText text="développement"/>, <YBoldText text="multijoueur"/></h1> 
                     <h1>local, <YBoldText text="publication"/> sur le Play Store</h1>
                 </div>
                 <div className='techno-projet'>
