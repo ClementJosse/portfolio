@@ -20,11 +20,13 @@
     height: auto;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    cursor: pointer ;
 }
 
 .image-projet video {
     height: 230px;
     object-fit: cover;
+    cursor: pointer ;
 }
 
 .texte-projet {

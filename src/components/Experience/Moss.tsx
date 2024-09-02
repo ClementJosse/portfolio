@@ -35,7 +35,7 @@ const Moss = () => {
                         <h1><YBoldText text="Simulations"/> comparatives de <YBoldText text="requêtes API"/></h1>
                         <h1>Paramétrage de <YBoldText text="piplines"/> de build du projet</h1>
                         <h1>Prise en charge de <YBoldText text="tickets"/> Jira</h1>
-                        <h1>Gestion de projet Agile <YBoldText text="Scrum"/></h1>
+                        <h1>Participation active aux réunions de gestion de projet <YBoldText text="Scrum"/></h1>
                     </div>
                 </div>
                 <div className="image-entreprise">

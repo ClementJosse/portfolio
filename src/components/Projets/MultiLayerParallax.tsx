@@ -14,7 +14,7 @@ const MultiLayerParallax = () => {
         const scrollFactor = (scrollPosition - containerTop) / containerHeight;
 
         // Calculate screen size factor based on a reference width of 1920px
-        const screenSizeFactor = 1920 / window.innerWidth;
+        const screenSizeFactor = (((window.innerHeight/window.innerWidth)^2)/2)+0.25;
 
         // Parallax effect with screen size adjustment
         const loin = containerRef.current.querySelector('.parallax-loin');
@@ -22,7 +22,7 @@ const MultiLayerParallax = () => {
         const proche = containerRef.current.querySelector('.parallax-proche');
 
         loin.style.backgroundPositionY = `${(scrollFactor * -0.5 * 100) * screenSizeFactor}%`;
-        moitie.style.backgroundPositionY = `${(scrollFactor * -2 * 100) * screenSizeFactor}%`;
+        moitie.style.backgroundPositionY = `${(scrollFactor * -1.5 * 100) * screenSizeFactor}%`;
         proche.style.backgroundPositionY = `${(scrollFactor * -3 * 100) * screenSizeFactor}%`;
       }
     };
