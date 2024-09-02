@@ -50,14 +50,14 @@ const Santorini = () => {
                     <h1><YBoldText text="multijoueur"/> en ligne en <YBoldText text="temps réel"/></h1>
                 </div>
                 <div className='techno-projet'>
+                    <CustomTooltip title="NodeJS">
+                      <NodeJS className="icon"/>
+                    </CustomTooltip>
                     <CustomTooltip title="React Native">
                       <Reacticon className="icon"/>
                     </CustomTooltip>
                     <CustomTooltip title="Firebase">
                       <Firebase className="icon"/>
-                    </CustomTooltip>
-                    <CustomTooltip title="NodeJS">
-                      <NodeJS className="icon"/>
                     </CustomTooltip>
                     <CustomTooltip title="Expo">
                       <Expo className="icon"/>
