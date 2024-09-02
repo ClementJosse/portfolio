@@ -32,7 +32,7 @@ const Lysoft = () => {
                         <h1>• Utilisation de <YBoldText text="linters"/> pour améliorer la <YBoldText text="qualité"/> du code</h1>
                         <h1>• <YBoldText text="Amélioration"/> de la <YBoldText text="vitesse"/> de génération des fichiers source</h1>
                         <h1>• Utilisation d'outils de <YBoldText text="Data Visualization"/> pour la prise de décision</h1>
-                        <h1>• Écriture de <YBoldText text="scripts automatisant"/> la compilation du projet</h1>
+                        <h1>• Application de la norme <YBoldText text="Conventional Commits"/> pour les commits</h1>
                         <h1>• Utilisation approfondie du <YBoldText text="débugger"/> sur IntelliJ </h1>
                         <h1>• Écriture de <YBoldText text="tests unitaires"/> et de tests de <YBoldText text="non-régression"/></h1>
                     </div>

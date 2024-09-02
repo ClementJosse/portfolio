@@ -34,6 +34,7 @@ const Checkfumi = () => {
                     muted
                     loop
                     preload="metadata"
+                    onClick={() => window.open("https://github.com/ClementJosse/Checkfumi")}
                 />
             </div>
             <div className='texte-projet'>

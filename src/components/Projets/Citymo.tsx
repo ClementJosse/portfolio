@@ -36,6 +36,7 @@ const Citymo = () => {
                   muted
                   loop
                   preload="metadata"
+                  onClick={() => window.open("https://github.com/ClementJosse/Citymo")}
               />
           </div>
             <div className='texte-projet'>

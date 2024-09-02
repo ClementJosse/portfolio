@@ -30,12 +30,12 @@ const Moss = () => {
                         <h1>Issy-les-Moulineaux, Paris 🇫🇷</h1>
                     </div>
                     <div className="experience-bulletpoints">
-                        <h1>Écriture d’un outil de génération du <YBoldText text="mapping"/> d’Elasticsearch</h1>
-                        <h1>Automatisation de scripts via le <YBoldText text="Build Lifecycle"/> de Maven</h1>
-                        <h1><YBoldText text="Simulations"/> comparatives de <YBoldText text="requêtes API"/></h1>
-                        <h1>Paramétrage de <YBoldText text="piplines"/> de build du projet</h1>
-                        <h1>Prise en charge de <YBoldText text="tickets"/> Jira</h1>
-                        <h1>Participation active aux réunions de gestion de projet <YBoldText text="Scrum"/></h1>
+                        <h1>• Écriture d’un outil de génération du <YBoldText text="mapping"/> d’Elasticsearch</h1>
+                        <h1>• Automatisation de scripts via le <YBoldText text="Build Lifecycle"/> de Maven</h1>
+                        <h1>• <YBoldText text="Simulations"/> comparatives de <YBoldText text="requêtes API"/></h1>
+                        <h1>• Paramétrage de <YBoldText text="piplines"/> de build du projet</h1>
+                        <h1>• Prise en charge de <YBoldText text="tickets"/> Jira</h1>
+                        <h1>• Participation active aux réunions de gestion de projet <YBoldText text="Scrum"/></h1>
                     </div>
                 </div>
                 <div className="image-entreprise">

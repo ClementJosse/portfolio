@@ -12,7 +12,7 @@ const Portfolio = () => {
     return (
         <div className="project-card">
             <div className='image-projet'>
-                <img src={imageProjet} alt="Image du projet" />
+                <img src={imageProjet} onClick={() => window.open("https://github.com/ClementJosse/portfolio")} alt="Image du projet" />
             </div>
             <div className='texte-projet'>
                 <div className='date-projet'>

@@ -35,6 +35,7 @@ const Santorini = () => {
                     muted
                     loop
                     preload="metadata"
+                    onClick={() => window.open("https://github.com/ClementJosse/santorini")}
                 />
             </div>
             <div className='texte-projet'>
@@ -45,7 +46,7 @@ const Santorini = () => {
                     <h1>Jeu mobile Santorini</h1>
                 </div>
                 <div className='description-projet'>
-                    <h1><YBoldText text="Recréation"/> du boardgame Santorini,</h1> 
+                    <h1><YBoldText text="Recréation"/> digitale du jeu Santorini,</h1> 
                     <h1><YBoldText text="développement"/> d’un système de</h1> 
                     <h1><YBoldText text="multijoueur"/> en ligne en <YBoldText text="temps réel"/></h1>
                 </div>

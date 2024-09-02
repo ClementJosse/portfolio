@@ -36,6 +36,7 @@ const Velib = () => {
                     muted
                     loop
                     preload="metadata"
+                    onClick={() => window.open("https://github.com/ClementJosse/Velib")}
                 />
             </div>
             <div className='texte-projet'>
