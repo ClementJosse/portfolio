@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import "./Projets.css";
-import imageProjet from '../../assets/projets/velib.png';
+import videoProjet from '../../assets/projets/velib.mp4';
 import YBoldText from '../YBoldText.tsx';
 import CustomTooltip from '../CustomTooltip.tsx';
 import { ReactComponent as Python } from '../../assets/techno/Python.svg';
@@ -10,10 +10,33 @@ import { ReactComponent as Spring } from '../../assets/techno/Spring.svg';
 import { ReactComponent as Docker } from '../../assets/techno/Docker.svg';
 
 const Velib = () => {
+    const videoRef = useRef(null);
+    const [isHovered, setIsHovered] = useState(false);
+
+    const handleMouseEnter = () => {
+        setIsHovered(true);
+        videoRef.current.play();
+    };
+
+    const handleMouseLeave = () => {
+        setIsHovered(false);
+        videoRef.current.pause();
+        videoRef.current.currentTime = 0;
+    };
+
     return (
-        <div className="project-card">
+        <div className="project-card"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}>
             <div className='image-projet'>
-                <img src={imageProjet} alt="Image du projet" />
+                <video
+                    ref={videoRef}
+                    src={videoProjet}
+                    className={`video-projet ${isHovered ? 'hovered' : ''}`}
+                    muted
+                    loop
+                    preload="metadata"
+                />
             </div>
             <div className='texte-projet'>
                 <div className='date-projet'>

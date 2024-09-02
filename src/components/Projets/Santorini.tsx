@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import "./Projets.css";
-import imageProjet from '../../assets/projets/santorini.png';
+import videoProjet from '../../assets/projets/santorini.mp4';
 import YBoldText from '../YBoldText.tsx';
 import CustomTooltip from '../CustomTooltip.tsx';
 import { ReactComponent as Reacticon } from '../../assets/techno/React.svg';
@@ -9,10 +9,33 @@ import { ReactComponent as NodeJS } from '../../assets/techno/NodeJS.svg';
 import { ReactComponent as Expo } from '../../assets/techno/Expo.svg';
 
 const Santorini = () => {
+    const videoRef = useRef(null);
+    const [isHovered, setIsHovered] = useState(false);
+
+    const handleMouseEnter = () => {
+        setIsHovered(true);
+        videoRef.current.play();
+    };
+
+    const handleMouseLeave = () => {
+        setIsHovered(false);
+        videoRef.current.pause();
+        videoRef.current.currentTime = 0;
+    };
+
     return (
-        <div className="project-card">
+        <div className="project-card"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}>
             <div className='image-projet'>
-                <img src={imageProjet} alt="Image du projet" />
+                <video
+                    ref={videoRef}
+                    src={videoProjet}
+                    className={`video-projet ${isHovered ? 'hovered' : ''}`}
+                    muted
+                    loop
+                    preload="metadata"
+                />
             </div>
             <div className='texte-projet'>
                 <div className='date-projet'>

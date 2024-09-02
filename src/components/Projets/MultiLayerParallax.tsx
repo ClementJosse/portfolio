@@ -1,8 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import './MultiLayerParallax.css';
-import trianglesProche from '../../assets/background-projet/proche.png';
-import trianglesMoitie from '../../assets/background-projet/moitié.png';
-import trianglesLoin from '../../assets/background-projet/loin.png';
 
 const MultiLayerParallax = () => {
   const containerRef = useRef(null);
@@ -16,14 +13,17 @@ const MultiLayerParallax = () => {
 
         const scrollFactor = (scrollPosition - containerTop) / containerHeight;
 
-        // Parallax effect
+        // Calculate screen size factor based on a reference width of 1920px
+        const screenSizeFactor = 1920 / window.innerWidth;
+
+        // Parallax effect with screen size adjustment
         const loin = containerRef.current.querySelector('.parallax-loin');
         const moitie = containerRef.current.querySelector('.parallax-moitie');
         const proche = containerRef.current.querySelector('.parallax-proche');
 
-        loin.style.transform = `translateY(${scrollFactor * -0.5 * 100}px)`;
-        moitie.style.transform = `translateY(${scrollFactor * -5 * 100}px)`;
-        proche.style.transform = `translateY(${scrollFactor * -15 * 100}px)`;
+        loin.style.backgroundPositionY = `${(scrollFactor * -0.5 * 100) * screenSizeFactor}%`;
+        moitie.style.backgroundPositionY = `${(scrollFactor * -2 * 100) * screenSizeFactor}%`;
+        proche.style.backgroundPositionY = `${(scrollFactor * -3 * 100) * screenSizeFactor}%`;
       }
     };
 
@@ -33,11 +33,20 @@ const MultiLayerParallax = () => {
     };
   }, []);
 
+  const commonStyles = {
+    position: 'absolute',
+    width: '100%',
+    height: '100%',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'repeat-y',
+    backgroundPosition: 'top left',
+  };
+
   return (
     <div className="parallax-container" ref={containerRef}>
-      <img src={trianglesLoin} className="parallax-layer parallax-loin" alt="Triangles Loin" />
-      <img src={trianglesMoitie} className="parallax-layer parallax-moitie" alt="Triangles Moitié" />
-      <img src={trianglesProche} className="parallax-layer parallax-proche" alt="Triangles Proche" />
+      <div className="parallax-loin" style={commonStyles}></div>
+      <div className="parallax-moitie" style={commonStyles}></div>
+      <div className="parallax-proche" style={commonStyles}></div>
     </div>
   );
 };

@@ -1,38 +1,35 @@
 .parallax-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 0; /* Derrière le contenu principal */
-  }
-  
-  .parallax-layer {
-    position: absolute;
-    width: 100%;
-    height: 5000px; /* Fixe la hauteur à 5000px pour éviter l'espace vide */
-    object-fit: cover; /* S'assure que l'image garde ses proportions */
-    max-width: none; /* Permet à l'image de dépasser les limites normales de largeur si nécessaire */
-    max-height: none; /* Permet à l'image de dépasser les limites normales de hauteur si nécessaire */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0; /* Derrière le contenu principal */
 }
 
-  
-  .layer-loin {
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-  
-  .layer-moitie {
-    top: 0;
-    left: 0;
-    z-index: 2;
-  }
-  
-  .layer-proche {
-    bottom: 0;
-    left: 0;
-    z-index: 3;
-  }
-  
+.parallax-loin,
+.parallax-moitie,
+.parallax-proche {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover; /* Ajuste la taille de l'image de fond */
+  background-repeat: repeat-y; /* Répète l'image de fond verticalement */
+  background-position: top left; /* Positionne l'image en haut à gauche */
+}
+
+.parallax-loin {
+  z-index: 1;
+  background-image: url('../../assets/background-projet/loin.png');
+}
+
+.parallax-moitie {
+  z-index: 2;
+  background-image: url('../../assets/background-projet/moitié.png');
+}
+
+.parallax-proche {
+  z-index: 3;
+  background-image: url('../../assets/background-projet/proche.png');
+}
