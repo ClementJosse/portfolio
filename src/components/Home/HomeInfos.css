@@ -17,7 +17,7 @@
 }
 
 .profile-img {
-    width: clamp(250px,25vw,400px);
+    width: clamp(225px,25vw,400px);
     height: auto;
     border-radius: 50%;
 }

@@ -5,8 +5,8 @@
     position: fixed;
     top: 15px;
     z-index: 1000;
-    font-size: clamp(3px, 1.25vw, 10px);
-    gap: clamp(5px, 1vw, 17px);
+    font-size: clamp(6px, 1.25vw, 10px);
+    gap: clamp(0px, 1vw, 17px);
     color: #D4F0FA;
     backdrop-filter: blur(4px);
     padding: 0px clamp(12px, 2vw, 16px); /* Ajoute du padding pour rendre le conteneur plus esthétique */
@@ -22,8 +22,8 @@
     color: #D4F0FA;
     font-weight: 600;
     transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
-    padding-inline: 15px;
-    padding-block: 10px;
+    padding-inline: clamp(10px, 1.25vw, 15px);
+    padding-block: clamp(5px, 1.25vw, 10px);
     border-radius: 50px;
 
 }

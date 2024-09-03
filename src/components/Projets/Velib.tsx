@@ -1,6 +1,6 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import "./Projets.css";
-import videoProjet from '../../assets/projets/velib.mp4';
+import gifProjet from '../../assets/projets/velib.gif';  // Changement de l'import pour un GIF
 import YBoldText from '../YBoldText.tsx';
 import CustomTooltip from '../CustomTooltip.tsx';
 import { ReactComponent as Python } from '../../assets/techno/Python.svg';
@@ -10,18 +10,17 @@ import { ReactComponent as Spring } from '../../assets/techno/Spring.svg';
 import { ReactComponent as Docker } from '../../assets/techno/Docker.svg';
 
 const Velib = () => {
-    const videoRef = useRef(null);
-    const [isHovered, setIsHovered] = useState(false);
+    const [gifSrc, setGifSrc] = useState(gifProjet);
 
     const handleMouseEnter = () => {
-        setIsHovered(true);
-        videoRef.current.play();
+        setGifSrc('');  // Réinitialise la source pour "rejouer" le GIF
+        setTimeout(() => {
+            setGifSrc(gifProjet);  // Remet la source du GIF après un court délai
+        }, 0);
     };
 
     const handleMouseLeave = () => {
-        setIsHovered(false);
-        videoRef.current.pause();
-        videoRef.current.currentTime = 0;
+        setGifSrc(gifProjet);  // Réinitialise la source si besoin
     };
 
     return (
@@ -29,13 +28,10 @@ const Velib = () => {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}>
             <div className='image-projet'>
-                <video
-                    ref={videoRef}
-                    src={videoProjet}
-                    className={`video-projet ${isHovered ? 'hovered' : ''}`}
-                    muted
-                    loop
-                    preload="metadata"
+                <img
+                    src={gifSrc}
+                    alt="Velib Project"
+                    className={`gif-projet ${gifSrc ? 'hovered' : ''}`}
                     onClick={() => window.open("https://github.com/ClementJosse/Velib")}
                 />
             </div>

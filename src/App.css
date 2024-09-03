@@ -22,7 +22,8 @@
   background-position: 0 0;
   background-attachment: fixed; /* Garde la grille fixe lors du scroll */
   width: 100%;
-  height: 1300px; 
+  padding-bottom: 50px;
+  height:1300px;
 }
 
 .projects-container {
@@ -70,8 +71,6 @@
   
 }
 
-
-
 @media (max-width: 950px) {
   .projects-container {
     height: 3300px;
@@ -80,4 +79,16 @@
     grid-template-columns: repeat(1, 380px); /* 3 colonnes de largeur égale */
   }
   
+}
+
+@media (max-width: 800px) {
+  .experiences-container{
+    height:1850px;
+  }
+}
+
+@media (max-width: 367px) {
+  .experiences-container{
+    height:2000px;
+  }
 }

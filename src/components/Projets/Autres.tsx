@@ -1,14 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Projets.css";
-import imageProjet from '../../assets/projets/autres.png';
+import gifProjet from '../../assets/projets/autres.gif';  // Changement de l'import pour un GIF
 import YBoldText from '../YBoldText.tsx';
 import CustomTooltip from '../CustomTooltip.tsx';
 
 const Autres = () => {
+    const [gifSrc, setGifSrc] = useState(gifProjet);
+
+    const handleMouseEnter = () => {
+        setGifSrc('');  // Réinitialise la source pour "rejouer" le GIF
+        setTimeout(() => {
+            setGifSrc(gifProjet);  // Remet la source du GIF après un court délai
+        }, 0);
+    };
+
+    const handleMouseLeave = () => {
+        setGifSrc(gifProjet);  // Réinitialise la source si besoin
+    };
+
     return (
-        <div className="project-card">
+        <div className="project-card"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}>
             <div className='image-projet'>
-                <img src={imageProjet} onClick={() => window.open("https://github.com/ClementJosse")} alt="Image du projet" />
+                <img
+                    src={gifSrc}
+                    onClick={() => window.open("https://github.com/ClementJosse")}
+                    alt="Image du projet"
+                />
             </div>
             <div className='texte-projet'>
                 <div className='date-projet'>

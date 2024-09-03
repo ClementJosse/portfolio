@@ -31,7 +31,7 @@
 }
 
 .image-entreprise img {
-    max-width: clamp(200px,50vw,380px);
+    max-width: clamp(225px,60vw,380px);
     border-radius: 20px;
     display: block;
     max-height: 100%; /* Pour s'assurer que l'image reste dans son conteneur */
@@ -41,21 +41,21 @@
 
 .date-entreprise h1,
 .lieu h1 {
-    font-size: clamp(14px,1vw,20px);
+    font-size: clamp(15px,1vw,18px);
     font-weight: 400;
     color: #8FA9CA;
     margin: 0;
 }
 
 .poste h1 {
-    font-size: 24px;
+    font-size: clamp(21px,1.5vw,24px);
     font-weight: 600;
     color: #D4F0FA;
     margin: 0;
 }
 
 .experience-bulletpoints h1 {
-    font-size: clamp(12px,1vw,18px);
+    font-size: clamp(15px,1vw,18px);
     font-weight: 400;
     color: #D4F0FA;
     margin: 5px 0;
@@ -75,19 +75,14 @@
     padding: 15px;
 }
 
-.technos .icon {
-    width: 40px;
-    height: 40px;
-}
-
 .technos .icon:hover {
     transform: scale(1.15);
     filter: saturate(2);
 }
 
 .technos .icon {
-    width: 40px;
-    height: 40px;
+    width: clamp(25px,6vw,40px);
+    height: auto;
     transition: transform 0.3s ease, fill 0.3s ease;
 }
 
@@ -115,7 +110,7 @@
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .technos {
         display: grid; /* Une seule colonne qui prend tout l'espace */
     }
