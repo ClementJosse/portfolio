@@ -90,7 +90,7 @@
 }
 
 .SocialIcons .icon {
-    width: clamp(30px,3vw,40px);
+    width: 40px;
     height: auto;
     cursor: pointer;
     transition: transform 0.3s ease, fill 0.3s ease;

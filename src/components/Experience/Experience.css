@@ -3,8 +3,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    padding: 40px;
+    padding-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -29,7 +31,7 @@
 }
 
 .image-entreprise img {
-    max-width: 380px;
+    max-width: clamp(200px,50vw,380px);
     border-radius: 20px;
     display: block;
     max-height: 100%; /* Pour s'assurer que l'image reste dans son conteneur */
@@ -39,7 +41,7 @@
 
 .date-entreprise h1,
 .lieu h1 {
-    font-size: 20px;
+    font-size: clamp(14px,1vw,20px);
     font-weight: 400;
     color: #8FA9CA;
     margin: 0;
@@ -53,7 +55,7 @@
 }
 
 .experience-bulletpoints h1 {
-    font-size: 18px;
+    font-size: clamp(12px,1vw,18px);
     font-weight: 400;
     color: #D4F0FA;
     margin: 5px 0;
@@ -61,8 +63,16 @@
 }
 
 .technos {
-    display: flex;
-    gap: 30px;
+    display: flex; /* Une seule colonne qui prend tout l'espace */
+    justify-items: center; /* Centre la grille */
+    padding: 20px; /* Ajoutez du padding si nécessaire */
+}
+
+.row {
+    display: flex; /* 5 colonnes avec une largeur minimale de 40px */
+    gap: 30px; /* Espacement entre les éléments */
+    justify-content: center; /* Centre les éléments dans la ligne */
+    padding: 15px;
 }
 
 .technos .icon {
@@ -99,7 +109,14 @@
     .texte-experience,
     .image-container {
         flex: none;
-        width: 620px;
     }
 }
 
+
+
+
+@media (max-width: 700px) {
+    .technos {
+        display: grid; /* Une seule colonne qui prend tout l'espace */
+    }
+}

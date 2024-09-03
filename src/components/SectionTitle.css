@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: end;
-    font-size: 40px;
+    font-size: clamp(30px,3vw,45px);
     font-weight: 600;
     position: relative;
     z-index: 15;

@@ -43,36 +43,40 @@ const Moss = () => {
           </div>
         </div>
         <div className='technos'>
-        <CustomTooltip title="Java">
-            <Java className="icon"/>
-          </CustomTooltip>
-          <CustomTooltip title="Maven">
-            <Maven className="icon"/>
-          </CustomTooltip>
-          <CustomTooltip title="IntelliJ">
-            <IntelliJ className="icon"/>
-          </CustomTooltip>
-          <CustomTooltip title="Bash">
-            <Bash className="icon"/>
-          </CustomTooltip>
-          <CustomTooltip title="Git">
-            <Git className="icon"/>
-          </CustomTooltip>
-          <CustomTooltip title="Elasticsearch">
-            <Elasticsearch className="icon"/>
-          </CustomTooltip>
-          <CustomTooltip title="Swagger">
-            <Swagger className="icon"/>
-          </CustomTooltip>
-          <CustomTooltip title="Postman">
-            <Postman className="icon"/>
-          </CustomTooltip>
-          <CustomTooltip title="Jenkins">
-            <Jenkins className="icon"/>
-          </CustomTooltip>
-          <CustomTooltip title="Jira">
-            <Jira className="icon"/>
-          </CustomTooltip>
+          <div className='row'>
+            <CustomTooltip title="Java">
+              <Java className="icon"/>
+            </CustomTooltip>
+            <CustomTooltip title="Maven">
+              <Maven className="icon"/>
+            </CustomTooltip>
+            <CustomTooltip title="IntelliJ">
+              <IntelliJ className="icon"/>
+            </CustomTooltip>
+            <CustomTooltip title="Bash">
+              <Bash className="icon"/>
+            </CustomTooltip>
+            <CustomTooltip title="Git">
+              <Git className="icon"/>
+            </CustomTooltip>
+          </div>
+          <div className='row'>
+            <CustomTooltip title="Elasticsearch">
+              <Elasticsearch className="icon"/>
+            </CustomTooltip>
+            <CustomTooltip title="Swagger">
+              <Swagger className="icon"/>
+            </CustomTooltip>
+            <CustomTooltip title="Postman">
+              <Postman className="icon"/>
+            </CustomTooltip>
+            <CustomTooltip title="Jenkins">
+              <Jenkins className="icon"/>
+            </CustomTooltip>
+            <CustomTooltip title="Jira">
+              <Jira className="icon"/>
+            </CustomTooltip>
+          </div>
         </div>
       </div>
     );
