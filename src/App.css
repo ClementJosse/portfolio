@@ -61,4 +61,23 @@
   .experiences-container{
       height: 1750px; 
   }
+  .projects-container {
+    height: 1850px;
+  }
+  .projects-list {
+    grid-template-columns: repeat(2, 380px); /* 3 colonnes de largeur égale */
+  }
+  
+}
+
+
+
+@media (max-width: 950px) {
+  .projects-container {
+    height: 3300px;
+  }
+  .projects-list {
+    grid-template-columns: repeat(1, 380px); /* 3 colonnes de largeur égale */
+  }
+  
 }

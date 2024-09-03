@@ -1,5 +1,5 @@
 .TextInfos > * {
-    margin-bottom: 60px; /* Ajoute une marge sous chaque élément enfant de TextInfos */
+    margin-bottom: clamp(25px,2.5vw,60px); /* Ajoute une marge sous chaque élément enfant de TextInfos */
 }
 
 .HomeInfos {
@@ -17,7 +17,7 @@
 }
 
 .profile-img {
-    width: 450px;
+    width: clamp(250px,25vw,400px);
     height: auto;
     border-radius: 50%;
 }
@@ -33,29 +33,29 @@
 
 .salut{
     color: #8FA9CA;
-    font-size: 30px;
+    font-size: clamp(15px,1.5vw,25px);
     font-weight: 500;
     position: relative;
-    top: 30px; /* Déplace l'élément de 100px vers le bas */
+    top: 1vw; /* Déplace l'élément de 100px vers le bas */
 }
 
 .clement{
     color: #D4F0FA;
-    font-size: 70px;
+    font-size: clamp(35px,4vw,60px);
     font-weight: 800;
     top: 15px;
 }
 
 .developpeur{
     color: #FFDC67;
-    font-size: 55px;
+    font-size: clamp(25px,2.5vw,40px);
     font-weight: 700;
     line-height: 20px;
 }
 
 .construis h1 {
     color: #8FA9CA;
-    font-size: 35px;
+    font-size: clamp(17.5px,2vw,30px);
     line-height: 15px;
     font-weight: 400;
 }
@@ -81,9 +81,8 @@
 }
 
 .SocialIcons .icon {
-    width: 40px;
     cursor: pointer;
-    height: 40px;
+    height: auto;
 }
 
 .SocialIcons .icon:hover {
@@ -91,8 +90,8 @@
 }
 
 .SocialIcons .icon {
-    width: 40px;
-    height: 40px;
+    width: clamp(30px,3vw,40px);
+    height: auto;
     cursor: pointer;
     transition: transform 0.3s ease, fill 0.3s ease;
 }
@@ -106,37 +105,8 @@
 }
 
 
-@media (max-width: 1250px) {
-    .TextInfos > * {
-        margin-bottom: 40px; /* Ajoute une marge sous chaque élément enfant de TextInfos */
-    }
 
-    .Split {
-        gap: 60px;
-    }
-
-    .profile-img {
-        width: 300px;
-    }
-
-    .salut{
-        font-size: 20px;
-    }
-
-    .clement{
-        font-size: 50px;  
-    }
-
-    .developpeur{
-        font-size: 40px; 
-    }
-
-    .construis h1 {
-        font-size: 25px;
-    }
-}
-
-@media (max-width: 950px) {
+@media (max-width: 800px) {
 
     .ProfilePicture {
         display: flex;
@@ -147,4 +117,10 @@
     .Split {
         display: block;
     }
+
+    .SocialIcons {
+        justify-content: center; /* Centre les éléments horizontalement */
+        align-items: center; /* Centre les éléments verticalement */
+    }
+    
 }
