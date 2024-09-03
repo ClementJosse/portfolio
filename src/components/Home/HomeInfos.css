@@ -16,6 +16,12 @@
     gap: 20px;
 }
 
+.profile-img {
+    width: 450px;
+    height: auto;
+    border-radius: 50%;
+}
+
 
 .Split {
   display: flex;
@@ -97,4 +103,48 @@
 
 .SocialIcons .icon:hover path {
     fill: #FFDC67;
+}
+
+
+@media (max-width: 1250px) {
+    .TextInfos > * {
+        margin-bottom: 40px; /* Ajoute une marge sous chaque élément enfant de TextInfos */
+    }
+
+    .Split {
+        gap: 60px;
+    }
+
+    .profile-img {
+        width: 300px;
+    }
+
+    .salut{
+        font-size: 20px;
+    }
+
+    .clement{
+        font-size: 50px;  
+    }
+
+    .developpeur{
+        font-size: 40px; 
+    }
+
+    .construis h1 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 950px) {
+
+    .ProfilePicture {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Split {
+        display: block;
+    }
 }

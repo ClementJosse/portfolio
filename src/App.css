@@ -54,3 +54,11 @@
 .titres-section{
   z-index: 5;
 }
+
+
+
+@media (max-width: 1250px) {
+  .experiences-container{
+      height: 1750px; 
+  }
+}

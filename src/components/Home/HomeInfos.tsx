@@ -15,10 +15,9 @@ export default function Canvas(): ReactElement {
     navigator.clipboard.writeText("clement.b.josse@gmail.com")
       .then(() => {
         setEmailCopied(true);
-        // Réinitialiser le message après un délai
         setTimeout(() => {
           setEmailCopied(false);
-        }, 1000); // 2 secondes avant de réinitialiser le message
+        }, 1000); // 1 seconde avant de réinitialiser le message
       })
       .catch((err) => {
         console.error("Erreur lors de la copie dans le presse-papier : ", err);
@@ -33,12 +32,12 @@ export default function Canvas(): ReactElement {
     <div className="HomeInfos">
       <div className="Split">
         <div className="ProfilePicture">
-          <img src={profilePicture} alt="Profile" style={{ width: '450px', height: 'auto', borderRadius: '50%' }} />
+          <img src={profilePicture} alt="Profile" className="profile-img" />
         </div>
         <div className="TextInfos">
           <h1 className="salut">Salut, je suis</h1>
           <h1 className="clement">Clément Josse</h1>
-          <h1 className="developpeur">Développeur Full-Stack</h1>
+          <h1 className="developpeur">Développeur Fullstack</h1>
           <div className="construis">
             <h1>Je construis des applications</h1>
             <h1>avec <span className="precision">précision</span> et <span className="passion">passion</span> 🔥</h1>
@@ -56,7 +55,7 @@ export default function Canvas(): ReactElement {
             </CustomTooltip>
             <CustomTooltip
               title={emailCopied ? "Email copié!" : "Copier mon Email"}
-              onMouseLeave={handleMouseLeave} // Réinitialiser après hover
+              onMouseLeave={handleMouseLeave}
             >
               <EmailIcon onClick={copyToClipboard} className="icon" />
             </CustomTooltip>

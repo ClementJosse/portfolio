@@ -17,64 +17,64 @@ import "./Experience.css"
 
 const Moss = () => {
     return (
-        <div className='experience'>
-            <div className='texte-image'>
-                <div className='texte-experience'>
-                    <div className="date-entreprise">
-                        <h1>2023 - MOSS - domaine de l'aérospatial 🛰️</h1>
-                    </div>
-                    <div className="poste">
-                        <h1>Stagiaire Développeur Java Elasticsearch</h1>
-                    </div>
-                    <div className="lieu">
-                        <h1>Issy-les-Moulineaux, Paris 🇫🇷</h1>
-                    </div>
-                    <div className="experience-bulletpoints">
-                        <h1>• Écriture d’un outil de génération du <YBoldText text="mapping"/> d’Elasticsearch</h1>
-                        <h1>• Automatisation de scripts via le <YBoldText text="Build Lifecycle"/> de Maven</h1>
-                        <h1>• <YBoldText text="Simulations"/> comparatives de <YBoldText text="requêtes API"/></h1>
-                        <h1>• Paramétrage de <YBoldText text="piplines"/> de build du projet</h1>
-                        <h1>• Prise en charge de <YBoldText text="tickets"/> Jira</h1>
-                        <h1>• Participation active aux réunions de gestion de projet <YBoldText text="Scrum"/></h1>
-                    </div>
-                </div>
-                <div className="image-entreprise">
-                    <img src={imgLysoft} alt="Image de l'entreprise" />
-                </div>
+      <div className='experience'>
+        <div className='texte-image'>
+          <div className="image-entreprise">
+            <img src={imgLysoft} alt="Image de l'entreprise" />
+          </div>
+          <div className='texte-experience'>
+            <div className="date-entreprise">
+              <h1>2023 - MOSS - domaine de l'aérospatial 🛰️</h1>
             </div>
-            <div className='technos'>
-            <CustomTooltip title="Java">
-                  <Java className="icon"/>
-                </CustomTooltip>
-                <CustomTooltip title="Maven">
-                  <Maven className="icon"/>
-                </CustomTooltip>
-                <CustomTooltip title="IntelliJ">
-                  <IntelliJ className="icon"/>
-                </CustomTooltip>
-                <CustomTooltip title="Bash">
-                  <Bash className="icon"/>
-                </CustomTooltip>
-                <CustomTooltip title="Git">
-                  <Git className="icon"/>
-                </CustomTooltip>
-                <CustomTooltip title="Elasticsearch">
-                  <Elasticsearch className="icon"/>
-                </CustomTooltip>
-                <CustomTooltip title="Swagger">
-                  <Swagger className="icon"/>
-                </CustomTooltip>
-                <CustomTooltip title="Postman">
-                  <Postman className="icon"/>
-                </CustomTooltip>
-                <CustomTooltip title="Jenkins">
-                  <Jenkins className="icon"/>
-                </CustomTooltip>
-                <CustomTooltip title="Jira">
-                  <Jira className="icon"/>
-                </CustomTooltip>
+            <div className="poste">
+              <h1>Stagiaire Développeur Java Elasticsearch</h1>
             </div>
+            <div className="lieu">
+              <h1>Issy-les-Moulineaux, Paris 🇫🇷</h1>
+            </div>
+            <div className="experience-bulletpoints">
+              <h1>• Écriture d’un outil de génération du <YBoldText text="mapping"/> d’Elasticsearch</h1>
+              <h1>• Automatisation de scripts via le <YBoldText text="Build Lifecycle"/> de Maven</h1>
+              <h1>• <YBoldText text="Simulations"/> comparatives de <YBoldText text="requêtes API"/></h1>
+              <h1>• Paramétrage de <YBoldText text="piplines"/> de build du projet</h1>
+              <h1>• Prise en charge de <YBoldText text="tickets"/> Jira</h1>
+              <h1>• Participation active aux réunions de gestion de projet <YBoldText text="Scrum"/></h1>
+            </div>
+          </div>
         </div>
+        <div className='technos'>
+        <CustomTooltip title="Java">
+            <Java className="icon"/>
+          </CustomTooltip>
+          <CustomTooltip title="Maven">
+            <Maven className="icon"/>
+          </CustomTooltip>
+          <CustomTooltip title="IntelliJ">
+            <IntelliJ className="icon"/>
+          </CustomTooltip>
+          <CustomTooltip title="Bash">
+            <Bash className="icon"/>
+          </CustomTooltip>
+          <CustomTooltip title="Git">
+            <Git className="icon"/>
+          </CustomTooltip>
+          <CustomTooltip title="Elasticsearch">
+            <Elasticsearch className="icon"/>
+          </CustomTooltip>
+          <CustomTooltip title="Swagger">
+            <Swagger className="icon"/>
+          </CustomTooltip>
+          <CustomTooltip title="Postman">
+            <Postman className="icon"/>
+          </CustomTooltip>
+          <CustomTooltip title="Jenkins">
+            <Jenkins className="icon"/>
+          </CustomTooltip>
+          <CustomTooltip title="Jira">
+            <Jira className="icon"/>
+          </CustomTooltip>
+        </div>
+      </div>
     );
 };
 
