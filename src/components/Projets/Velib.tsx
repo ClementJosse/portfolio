@@ -10,28 +10,13 @@ import { ReactComponent as Spring } from '../../assets/techno/Spring.svg';
 import { ReactComponent as Docker } from '../../assets/techno/Docker.svg';
 
 const Velib = () => {
-    const [gifSrc, setGifSrc] = useState(gifProjet);
-
-    const handleMouseEnter = () => {
-        setGifSrc('');  // Réinitialise la source pour "rejouer" le GIF
-        setTimeout(() => {
-            setGifSrc(gifProjet);  // Remet la source du GIF après un court délai
-        }, 0);
-    };
-
-    const handleMouseLeave = () => {
-        setGifSrc(gifProjet);  // Réinitialise la source si besoin
-    };
-
     return (
-        <div className="project-card"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+        <div className="project-card">
             <div className='image-projet'>
                 <img
-                    src={gifSrc}
+                    src={gifProjet}
                     alt="Velib Project"
-                    className={`gif-projet ${gifSrc ? 'hovered' : ''}`}
+                    className={`gif-projet`}
                     onClick={() => window.open("https://github.com/ClementJosse/Velib")}
                 />
             </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Projets.css";
-import imageProjet from '../../assets/projets/portfolio.png';
+import gifProjet from '../../assets/projets/portfolio.gif';
 import YBoldText from '../YBoldText.tsx';
 import CustomTooltip from '../CustomTooltip.tsx';
 import { ReactComponent as Figma } from '../../assets/techno/Figma.svg';
@@ -12,7 +12,12 @@ const Portfolio = () => {
     return (
         <div className="project-card">
             <div className='image-projet'>
-                <img src={imageProjet} onClick={() => window.open("https://github.com/ClementJosse/portfolio")} alt="Image du projet" />
+                <img
+                    src={gifProjet}
+                    alt="portfolio Project"
+                    className={`gif-projet`}
+                    onClick={() => window.open("https://github.com/ClementJosse/portfolio")}
+                />
             </div>
             <div className='texte-projet'>
                 <div className='date-projet'>
