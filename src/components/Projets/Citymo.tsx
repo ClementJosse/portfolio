@@ -29,7 +29,7 @@ const Citymo = () => {
               </div>
               <div className='description-projet'>
                   <h1><YBoldText text="Scrapping"/> de données, Création de la</h1> 
-                  <h1><YBoldText text="base de donnée"/>, création d’une <YBoldText text="API"/> </h1> 
+                  <h1><YBoldText text="base de données"/>, création d’une <YBoldText text="API"/> </h1> 
                   <h1>pour le <YBoldText text="back end"/> et <YBoldText text="conteneurisation"/></h1>
               </div>
               <div className='techno-projet'>

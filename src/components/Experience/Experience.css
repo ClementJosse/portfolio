@@ -34,7 +34,8 @@
     max-width: clamp(225px,60vw,380px);
     border-radius: 20px;
     display: block;
-    max-height: 100%; /* Pour s'assurer que l'image reste dans son conteneur */
+    max-height: 100%;
+    cursor: pointer;
 }
 
 

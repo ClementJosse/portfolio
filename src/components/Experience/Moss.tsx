@@ -20,7 +20,7 @@ const Moss = () => {
       <div className='experience'>
         <div className='texte-image'>
           <div className="image-entreprise">
-            <img src={imgLysoft} alt="Image de l'entreprise" />
+            <img src={imgLysoft} alt="Image de l'entreprise" onClick={() => window.open("https://www.moss.fr/")}/>
           </div>
           <div className='texte-experience'>
             <div className="date-entreprise">
