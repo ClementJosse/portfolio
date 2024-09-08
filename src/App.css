@@ -43,12 +43,27 @@
 }
 
 .competences-container{
-  height: 2000px;
-  background-color: #192651;
+  top:500px;
+  min-height: 100vh;
+  background-image: url('assets/tilebackground.png');
+  background-color: #081B49;
+  background-repeat: repeat-x;
+  animation: scrollBackground linear infinite;
+  animation-duration: 30s; /* Ajuste la durée selon la vitesse souhaitée */
 }
 
+@keyframes scrollBackground {
+  0% {
+    background-position: 0 center;
+  }
+  100% {
+    background-position: -2640px center; /* Fait défiler l'image sur toute sa largeur */
+  }
+}
+
+
 .contact-footer{
-  height: 2000px;
+  height:300px;
   background-color: #03062C;
 }
 
@@ -56,7 +71,9 @@
   z-index: 5;
 }
 
-
+.navbargap{
+  height: clamp(70px,15vw, 110px);
+}
 
 @media (max-width: 1250px) {
   .experiences-container{

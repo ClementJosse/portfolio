@@ -28,8 +28,8 @@ const Portfolio = () => {
                 </div>
                 <div className='description-projet'>
                     <h1><YBoldText text="Design"/> et <YBoldText text="maquettage"/> du site,</h1> 
-                    <h1><YBoldText text="développement"/> et <YBoldText text="implémentation"/> </h1> 
-                    <h1>technique, <YBoldText text="hébergement"/> en ligne</h1>
+                    <h1><YBoldText text="développement"/> web <YBoldText text="responsive"/>,</h1> 
+                    <h1><YBoldText text="hébergement"/> du site en ligne     </h1>
                 </div>
                 <div className='techno-projet'>
                     <CustomTooltip title="Figma">
