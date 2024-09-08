@@ -1,0 +1,39 @@
+.competences-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two equal-width columns */
+    grid-gap: 20px; /* Spacing between the boxes */
+    margin: 0 250px; 
+    margin-top: 50px; 
+    justify-content: center;
+    align-items: start; /* Aligns items to the top */
+}
+
+.competence-box {
+    background-color: #03062CCC;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Additional styling for specific boxes (if needed) */
+.competence-box.frontend {
+    grid-column: span 1; /* Takes one column */
+}
+
+.competence-box.backend {
+    grid-column: span 1; /* Takes one column */
+}
+
+.competence-box.cloud {
+    grid-column: span 1; /* Takes one column */
+}
+
+.competence-box.management {
+    grid-column: span 1; /* Takes one column */
+}
