@@ -1,6 +1,6 @@
 .TechnoTiles {
     width: 100vw;
-    height: 200px;
+    height: 125px;
     background-image: url('../../assets/tileline.png');
     background-repeat: repeat-x;
     background-size: 2640px auto; /* Taille de l'image en pixels */
