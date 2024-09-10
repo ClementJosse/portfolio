@@ -12,7 +12,7 @@ import CustomTooltip from '../CustomTooltip.tsx';
 
 const Others = () => {
     return (
-        <div className="others">
+        <div className="competence-box others">
             <h1>Autres Technologies/Logiciels</h1>
             <div className='techno-competences'>
                 <CustomTooltip title="Git">
@@ -29,9 +29,6 @@ const Others = () => {
                 </CustomTooltip>
                 <CustomTooltip title="Android Studio">
                   <AndroidStudio className="icon"/>
-                </CustomTooltip>
-                <CustomTooltip title="NetworkX">
-                  <NetworkX className="icon"/>
                 </CustomTooltip>
                 <CustomTooltip title="VSCode">
                   <VSCode className="icon"/>

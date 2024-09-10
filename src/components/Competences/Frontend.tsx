@@ -13,7 +13,7 @@ import CustomTooltip from '../CustomTooltip.tsx';
 
 const Frontend = () => {
     return (
-        <div className="frontend">
+        <div className="competence-box frontend">
             <h1>Design & Frontend</h1>
             <div className='techno-competences'>
                 <CustomTooltip title="Figma">
@@ -30,12 +30,6 @@ const Frontend = () => {
                 </CustomTooltip>
                 <CustomTooltip title="ReactJS">
                   <Reactlogo className="icon"/>
-                </CustomTooltip>
-                <CustomTooltip title="AngularJS">
-                  <Angular className="icon"/>
-                </CustomTooltip>
-                <CustomTooltip title="VueJS">
-                  <VueJS className="icon"/>
                 </CustomTooltip>
                 <CustomTooltip title="Tailwind">
                   <Tailwind className="icon"/>

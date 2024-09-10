@@ -4,7 +4,7 @@ import CustomTooltip from '../CustomTooltip.tsx';
 
 const Certifications = () => {
     return (
-        <div className="certifications">
+        <div className="competence-box certifications">
             <h1>Certifications</h1>
             <div className='js-algo-data'>
 

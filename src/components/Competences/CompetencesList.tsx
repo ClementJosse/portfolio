@@ -8,19 +8,18 @@ import Certifications from './Certifications.tsx';
 
 export default function CompetencesList(): ReactElement {
   return (
-    <div className="competences-list">
-      <div className='competence-box'>
-        <Frontend/>
+    <div className="competences-list-row">
+
+      <div className='competences-list-colomn'>
+          <Frontend/>
+          <Beckend/>
+          <Others/>
       </div>
-      <div className='competence-box'>
-        <Beckend/>
+
+      <div className='competences-list-colomn'>
+          <Certifications/>
       </div>
-      <div className='competence-box'>
-        <Others/>
-      </div>
-      <div className='competence-box'>
-        <Certifications/>
-      </div>
+
     </div>
   );
 }

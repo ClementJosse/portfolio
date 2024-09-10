@@ -20,7 +20,7 @@ import CustomTooltip from '../CustomTooltip.tsx';
 
 const Backend = () => {
     return (
-        <div className="backend">
+        <div className="competence-box backend">
             <h1>Backend</h1>
             <div className='techno-competences'>
                 <CustomTooltip title="Java">
@@ -34,12 +34,6 @@ const Backend = () => {
                 </CustomTooltip>
                 <CustomTooltip title="Python">
                   <Python className="icon"/>
-                </CustomTooltip>
-                <CustomTooltip title="C">
-                  <C className="icon"/>
-                </CustomTooltip>
-                <CustomTooltip title="Cpp">
-                  <Cpp className="icon"/>
                 </CustomTooltip>
                 <CustomTooltip title="Bash">
                   <Bash className="icon"/>
