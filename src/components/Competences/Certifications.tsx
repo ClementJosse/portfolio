@@ -21,11 +21,13 @@ const Certifications = () => {
                 <CustomTooltip title="JavaScript">
                     <JavaScript className="icon cert-icon" />
                 </CustomTooltip>
-                <div className="certification-text">
+                <div className="certification-content" onClick={() => window.open("https://www.freecodecamp.org/certification/fcc9e3967d0-405d-43d2-914b-7300e6cb6090/javascript-algorithms-and-data-structures")}>
                     <CustomTooltip title="freecodecamp.org">
                         <Freecodecamp className="icon cert-icon" />
                     </CustomTooltip>
-                    <h1>JavaScript Algorithms and Data Structures</h1>
+                    <CustomTooltip title="Voir la certification">
+                        <div className="certification-text">JavaScript Algorithms and Data Structures</div>
+                    </CustomTooltip>
                 </div>
             </div>
 
@@ -33,14 +35,16 @@ const Certifications = () => {
                 <CustomTooltip title="Spring">
                     <Spring className="icon cert-icon" />
                 </CustomTooltip>
-                <div className="certification-text">
+                <div className="certification-content" onClick={() => window.open("https://openclassrooms.com/fr/courses/6900101-creez-une-application-java-avec-spring-boot")}>
                     <CustomTooltip title="OpenClassrooms">
                         <OpenClassrooms className="icon cert-icon" />
                     </CustomTooltip>
-                    <h1>Créez une application Java avec Spring</h1>
+                    <CustomTooltip title="Voir la certification">
+                        <div className="certification-text">Créez une application Java avec Spring</div>
+                    </CustomTooltip>
                 </div>
             </div>
-
+            
             <div className="certification-item">
                 <Line/>
             </div>
@@ -49,11 +53,13 @@ const Certifications = () => {
                 <CustomTooltip title="Master diplôme d'ingénieur">
                     <Diplome className="icon cert-icon" />
                 </CustomTooltip>
-                <div className="certification-text">
+                <div className="certification-content" onClick={() => window.open("https://esiea.fr")}>
                     <CustomTooltip title="ESIEA">
                         <Esiea className="icon cert-icon" />
                     </CustomTooltip>
-                    <h1>Master ingénieur en informatique ESIEA</h1>
+                    <CustomTooltip title="Voir le diplôme">
+                        <div className="certification-text">Master ingénieur en informatique ESIEA</div>
+                    </CustomTooltip>
                 </div>
             </div>
         </div>

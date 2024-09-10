@@ -55,7 +55,7 @@
 }
 
 
-.certification-text {
+.certification-content {
     background-color: #D4F0FA;
     border-radius: 50px;
     display: flex;
@@ -72,7 +72,7 @@
     cursor: pointer;
 }
 
-.certification-text:hover {
+.certification-content:hover {
     transform: scale(1.02); /* Slight enlargement */
     background-color: #bde6f5; /* Change background color on hover */
     filter: saturate(1.2); /* Slightly more saturation */
@@ -98,7 +98,12 @@
 }
 
 
-.certification-text h1 {
+.certification-text{
+    height: 50px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;     
+    display: flex;
     color: #03062C;
     font-size: 15px;
     font-weight: 700;
