@@ -12,12 +12,14 @@ const Portfolio = () => {
     return (
         <div className="project-card">
             <div className='image-projet'>
-                <img
-                    src={gifProjet}
-                    alt="portfolio Project"
-                    className={`gif-projet`}
-                    onClick={() => window.open("https://github.com/ClementJosse/portfolio")}
-                />
+                <CustomTooltip title="Voir le projet sur GitHub">
+                    <img
+                        src={gifProjet}
+                        alt="portfolio Project"
+                        className={`gif-projet`}
+                        onClick={() => window.open("https://github.com/ClementJosse/portfolio")}
+                    />
+                </CustomTooltip>
             </div>
             <div className='texte-projet'>
                 <div className='date-projet'>

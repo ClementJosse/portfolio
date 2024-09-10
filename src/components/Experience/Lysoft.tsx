@@ -17,9 +17,11 @@ const Lysoft = () => {
     return (
       <div className='experience'>
         <div className='texte-image'>
-          <div className="image-entreprise">
-            <img src={imgLysoft} alt="Image de l'entreprise" onClick={() => window.open("https://lysoft.ch/")}/>
-          </div>
+              <div className="image-entreprise">
+                <CustomTooltip title="Voir le site de l'entreprise">
+                  <img src={imgLysoft} alt="Image de l'entreprise" onClick={() => window.open("https://lysoft.ch/")}/>
+                </CustomTooltip>
+              </div> 
           <div className='texte-experience'>
               <div className="date-entreprise">
                 <h1>2024 - Lysoft SA - domaine des laboratoires médicaux 🧪</h1>

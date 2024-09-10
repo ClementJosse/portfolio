@@ -8,11 +8,13 @@ const Autres = () => {
     return (
         <div className="project-card">
             <div className='image-projet'>
-                <img
-                    src={gifProjet}
-                    onClick={() => window.open("https://github.com/ClementJosse")}
-                    alt="Image du projet"
-                />
+                <CustomTooltip title="Voir d'autres projets sur GitHub">
+                    <img
+                        src={gifProjet}
+                        onClick={() => window.open("https://github.com/ClementJosse")}
+                        alt="Image du projet"
+                    />
+                </CustomTooltip>
             </div>
             <div className='texte-projet'>
                 <div className='date-projet'>

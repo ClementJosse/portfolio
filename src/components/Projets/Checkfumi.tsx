@@ -11,12 +11,14 @@ const Checkfumi = () => {
     return (
         <div className="project-card">
             <div className='image-projet'>
-                <img
-                    src={gifProjet}
-                    alt="Checkfumi Project"
-                    className={`gif-projet`}
-                    onClick={() => window.open("https://github.com/ClementJosse/Checkfumi")}
-                />
+                <CustomTooltip title="Voir le projet sur GitHub">
+                    <img
+                        src={gifProjet}
+                        alt="Checkfumi Project"
+                        className={`gif-projet`}
+                        onClick={() => window.open("https://github.com/ClementJosse/Checkfumi")}
+                    />
+                </CustomTooltip>
             </div>
             <div className='texte-projet'>
                 <div className='date-projet'>

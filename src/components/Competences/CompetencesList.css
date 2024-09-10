@@ -5,7 +5,7 @@
     justify-content: center; /* Centre les cartes au centre horizontalement */
     gap: 30px; /* Espace entre les divs enfants */
     position: relative;
-    padding: 40px;
+    padding: 80px;
     align-items: start; /* Les boîtes s'aligneront selon leur propre contenu */
 }
 
@@ -138,3 +138,15 @@
 .techno-competences .icon path {
     transition: fill 0.15s ease;
 }
+
+
+@media (max-width: 1250px) {
+    .competences-list-row{
+        display: block; 
+    }
+    .competence-box.certifications {
+        margin-top: 30px;
+    }
+    
+  }
+  

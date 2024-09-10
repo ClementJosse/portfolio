@@ -28,6 +28,7 @@
     display: flex;
     align-items: center;
     justify-content: center; /* Pour centrer horizontalement l'image aussi si besoin */
+    
 }
 
 .image-entreprise img {
@@ -35,7 +36,13 @@
     border-radius: 20px;
     display: block;
     max-height: 100%;
+    transition: transform 0.15s ease, background-color 0.1s ease;
     cursor: pointer;
+}
+
+.image-entreprise img:hover {
+    transform: scale(1.03); /* Slight enlargement */
+    filter: saturate(1.3);
 }
 
 

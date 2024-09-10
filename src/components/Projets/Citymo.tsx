@@ -13,12 +13,14 @@ const Citymo = () => {
   return (
       <div className="project-card">
           <div className='image-projet'>
+            <CustomTooltip title="Voir le projet sur GitHub">
               <img
                   src={gifProjet}
                   alt="Citymo Project"
                   className={`gif-projet`}
                   onClick={() => window.open("https://github.com/ClementJosse/Citymo")}
               />
+            </CustomTooltip>
           </div>
           <div className='texte-projet'>
               <div className='date-projet'>

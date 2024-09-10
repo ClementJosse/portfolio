@@ -12,12 +12,14 @@ const Santorini = () => {
     return (
         <div className="project-card">
             <div className='image-projet'>
-                <img
-                    src={gifProjet}
-                    alt="Santorini Project"
-                    className={`gif-projet `}
-                    onClick={() => window.open("https://github.com/ClementJosse/santorini")}
-                />
+                <CustomTooltip title="Voir le projet sur GitHub">
+                    <img
+                        src={gifProjet}
+                        alt="Santorini Project"
+                        className={`gif-projet `}
+                        onClick={() => window.open("https://github.com/ClementJosse/santorini")}
+                    />
+                </CustomTooltip>
             </div>
             <div className='texte-projet'>
                 <div className='date-projet'>
