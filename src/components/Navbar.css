@@ -21,7 +21,7 @@
     cursor: pointer;
     color: #D4F0FA;
     font-weight: 600;
-    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    transition: color 0.15s ease, transform 0.15s ease, background-color 0.15s ease;
     padding-inline: clamp(10px, 1.25vw, 15px);
     padding-block: clamp(5px, 1.25vw, 10px);
     border-radius: 50px;

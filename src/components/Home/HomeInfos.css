@@ -93,11 +93,11 @@
     width: 40px;
     height: auto;
     cursor: pointer;
-    transition: transform 0.3s ease, fill 0.3s ease;
+    transition: transform 0.15s ease, fill 0.15s ease;
 }
 
 .SocialIcons .icon path {
-    transition: fill 0.3s ease;
+    transition: fill 0.15s ease;
 }
 
 .SocialIcons .icon:hover path {

@@ -68,16 +68,35 @@
     overflow: hidden; /* Empêche le texte de dépasser la boîte */
     white-space: nowrap; /* Empêche le texte de passer à la ligne */
     text-overflow: ellipsis; /* Ajoute '...' si le texte est trop long */
+    transition: transform 0.15s ease, background-color 0.1s ease;
+    cursor: pointer;
 }
 
-
+.certification-text:hover {
+    transform: scale(1.02); /* Slight enlargement */
+    background-color: #bde6f5; /* Change background color on hover */
+    filter: saturate(1.2); /* Slightly more saturation */
+}
 
 .cert-icon {
     display: flex;
     padding: 5px;
     height: auto;
-    width: 40px;
+    width: 35px;
+    transition: transform 0.15s ease, fill 0.15s ease;
 }
+
+/* Hover effect */
+.cert-icon:hover {
+    transform: scale(1.15);
+    filter: saturate(2);
+}
+
+/* Path inside icon changes on hover */
+.cert-icon path {
+    transition: fill 0.15s ease;
+}
+
 
 .certification-text h1 {
     color: #03062C;
@@ -101,7 +120,7 @@
 .techno-competences .icon {
     width: 40px;
     height: 40px;
-    transition: transform 0.3s ease, fill 0.3s ease;
+    transition: transform 0.15s ease, fill 0.15s ease;
 }
 
 /* Hover effect for icons */
@@ -112,5 +131,5 @@
 
 /* Path inside icon changes on hover */
 .techno-competences .icon path {
-    transition: fill 0.3s ease;
+    transition: fill 0.15s ease;
 }

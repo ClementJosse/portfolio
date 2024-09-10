@@ -84,11 +84,11 @@
 .technos .icon {
     width: clamp(25px,6vw,40px);
     height: auto;
-    transition: transform 0.3s ease, fill 0.3s ease;
+    transition: transform 0.15s ease, fill 0.15s ease;
 }
 
 .technos .icon path {
-    transition: fill 0.3s ease;
+    transition: fill 0.15s ease;
 }
 
 

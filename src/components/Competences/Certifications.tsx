@@ -42,7 +42,7 @@ const Certifications = () => {
             </div>
 
             <div className="certification-item">
-                <Line className="icon cert-icon" />
+                <Line/>
             </div>
 
             <div className="certification-item">
