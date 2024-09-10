@@ -19,7 +19,7 @@
 
 /* Competence box styling */
 .competence-box {
-    width: 500px; /* Fixed width of 500px */
+    width: 500px;
     backdrop-filter: blur(4px);
     background-color: #03062C88;
     padding: 25px;
@@ -28,14 +28,14 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: auto; /* Permet à la boîte de s'adapter automatiquement */
+    height: auto;
 }
 
 .competence-box.certifications {
     margin-top: 75px;
 }
 
-/* Title in each competence box */
+
 .competence-box h1 {
     font-size: clamp(24px, 2vw, 30px);
     font-weight: 600;
@@ -44,12 +44,53 @@
     margin-bottom: 25px;
 }
 
+.certification-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    border-radius: 50px;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+
+.certification-text {
+    background-color: #D4F0FA;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+    width: 400px; /* Ajout de l'unité 'px' pour la largeur */
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden; /* Empêche le texte de dépasser la boîte */
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+    text-overflow: ellipsis; /* Ajoute '...' si le texte est trop long */
+}
+
+
+
+.cert-icon {
+    display: flex;
+    padding: 5px;
+    height: auto;
+    width: 40px;
+}
+
+.certification-text h1 {
+    color: #03062C;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+}
+
 /* Flexbox container for icons */
 .techno-competences {
-    padding-top: 5px;
     display: flex;
     flex-wrap: wrap; /* Allows items to wrap to the next line */
-    gap: 25px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
     width: 100%;
