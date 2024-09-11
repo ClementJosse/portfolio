@@ -68,6 +68,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D4F0FA;
+  background-image: url("./assets/dot.png"); /* Ajout de l'image en arrière-plan */
+  background-position: start;
+  background-repeat: repeat;
+  background-size: 20px; /* Ajuster la taille de l'image */
+}
+
+.contact-footer h1{
+  font-size: clamp(15px,1vw,18px);
+  font-weight: 400;
+  color: #8FA9CA;
+  margin: 0;
 }
 
 .titres-section{

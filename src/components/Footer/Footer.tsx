@@ -30,26 +30,25 @@ const Footer = () => {
   return (
     <div>
         <div className="footer-SocialIcons">
-          <CustomTooltip title="Mon LinkedIn">
-            <LinkedinIcon onClick={() => window.open("https://www.linkedin.com/in/clement-josse")} className="icon" />
-          </CustomTooltip>
-          <CustomTooltip title="Mon GitHub">
-            <GithubIcon onClick={() => window.open("https://github.com/ClementJosse")} className="icon" />
-          </CustomTooltip>
-          <CustomTooltip title="Mon CV">
-            <CvIcon onClick={() => window.open(cvPdf)} className="icon" />
-          </CustomTooltip>
-          <CustomTooltip
-            title={emailCopied ? "Email copié!" : "Copier mon Email"}
-            onMouseLeave={handleMouseLeave}
-          >
-            <EmailIcon onClick={copyToClipboard} className="icon" />
-          </CustomTooltip>
+            <CustomTooltip title="Mon LinkedIn">
+                <LinkedinIcon onClick={() => window.open("https://www.linkedin.com/in/clement-josse")} className="icon" />
+            </CustomTooltip>
+            <CustomTooltip title="Mon GitHub">
+                <GithubIcon onClick={() => window.open("https://github.com/ClementJosse")} className="icon" />
+            </CustomTooltip>
+            <CustomTooltip title="Mon CV">
+                <CvIcon onClick={() => window.open(cvPdf)} className="icon" />
+            </CustomTooltip>
+            <CustomTooltip
+                title={emailCopied ? "Email copié!" : "Copier mon Email"}
+                onMouseLeave={handleMouseLeave}
+            >
+                <EmailIcon onClick={copyToClipboard} className="icon" />
+            </CustomTooltip>
         </div>
-        © 2024 · Site créé avec ❤️ par Clément Josse
+        <h1>© 2024 · Site créé avec ❤️ par Clément Josse</h1>
     </div>
   );
 }
-
 
 export default Footer;
