@@ -18,6 +18,8 @@ import Autres from './components/Projets/Autres.tsx';
 import TechnoTiles from './components/Competences/TechnoTiles.tsx';
 import CompetencesList from './components/Competences/CompetencesList.tsx';
 
+import Footer from './components/Footer/Footer.tsx';
+
 import "./App.css"; 
 import MultiLayerParallax from './components/Projets/MultiLayerParallax.tsx';
 
@@ -66,7 +68,9 @@ function App() {
         <CompetencesList/>
         <TechnoTiles/>
       </div>
-      <div className="contact-footer" >Contact footer</div>
+      <div className="contact-footer" >
+        <Footer/>
+      </div>
     </div>
   );
 }

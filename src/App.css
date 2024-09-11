@@ -63,8 +63,11 @@
 
 
 .contact-footer{
-  height:300px;
+  height:200px;
   background-color: #03062C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .titres-section{

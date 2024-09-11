@@ -1,0 +1,30 @@
+.footer-SocialIcons {
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 25px;
+    gap: 30px; 
+}
+
+.footer-SocialIcons .icon {
+    cursor: pointer;
+    height: auto;
+}
+
+.footer-SocialIcons .icon:hover {
+    transform: scale(1.15);
+}
+
+.footer-SocialIcons .icon {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.15s ease, fill 0.15s ease;
+}
+
+.footer-SocialIcons .icon path {
+    transition: fill 0.15s ease;
+}
+
+.footer-SocialIcons .icon:hover path {
+    fill: #FFDC67;
+}
