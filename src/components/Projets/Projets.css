@@ -1,6 +1,6 @@
 .project-card {
-    width: clamp(330px, 60vw, 380px);
-    height: clamp(450px, 90vw, 480px);;
+    width: clamp(200px, 75vw, 380px);
+    height: clamp(400px, 100vw, 480px);;
     background-color: #03062C88; 
     display: flex;
     flex-direction: column;
@@ -44,7 +44,8 @@
     padding-right: 15px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: clamp(0px, 1vw, 8px);
+    width: max-content;
 }
 
 .date-projet h1, 
@@ -73,7 +74,7 @@
 
 .description-projet h1 {
     color: #8FA9CA;
-    font-size: clamp(15px,1vw,18px);
+    font-size: clamp(12px,2.5vw,18px);
     font-weight: 300;
     text-align: justify;
     margin: 0 0;
@@ -96,7 +97,7 @@
 }
 
 .techno-projet {
-    padding-top: 5px;
+    padding-bottom: 5px;
     display: flex;
     gap: 25px;
     justify-content: center;

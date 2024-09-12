@@ -40,7 +40,8 @@
   grid-template-columns: repeat(3, 380px); /* 3 colonnes de largeur égale */
   gap: 30px; /* Espace entre les divs enfants */
   position: relative;
-  padding: 40px
+  padding-top: 40px;
+  padding-bottom: 100px;
 }
 
 .competences-container{
@@ -110,7 +111,7 @@
 
 @media (max-width: 950px) {
   .projects-container {
-    height: 3300px;
+    height: auto;
   }
   .projects-list {
     grid-template-columns: repeat(1, 380px); /* 3 colonnes de largeur égale */
