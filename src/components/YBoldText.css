@@ -1,5 +1,5 @@
 .yellow-bold-text{
-    font-size: clamp(15px,1vw,18px);
+    font-size: clamp(12px,2.5vw,18px);
     font-weight: 600;
     color: #FFDC67;
     margin: 5px 0;

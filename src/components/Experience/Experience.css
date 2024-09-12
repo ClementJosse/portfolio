@@ -4,8 +4,8 @@
     align-items: center;
     justify-content: center;
     padding-top: 40px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
     padding-bottom: 40px;
     max-width: 1000px;
     margin: 0 auto;
@@ -63,7 +63,7 @@
 }
 
 .experience-bulletpoints h1 {
-    font-size: clamp(15px,1vw,18px);
+    font-size: clamp(12px,2.5vw,18px);
     font-weight: 400;
     color: #D4F0FA;
     margin: 5px 0;
@@ -73,14 +73,14 @@
 .technos {
     display: flex; /* Une seule colonne qui prend tout l'espace */
     justify-items: center; /* Centre la grille */
-    padding: 20px; /* Ajoutez du padding si nécessaire */
+    padding-top: 20px; /* Ajoutez du padding si nécessaire */
 }
 
 .row {
     display: flex; /* 5 colonnes avec une largeur minimale de 40px */
-    gap: 30px; /* Espacement entre les éléments */
+    gap: 25px; /* Espacement entre les éléments */
     justify-content: center; /* Centre les éléments dans la ligne */
-    padding: 15px;
+    padding: 12px;
 }
 
 .technos .icon:hover {
@@ -89,7 +89,7 @@
 }
 
 .technos .icon {
-    width: clamp(25px,6vw,40px);
+    width: clamp(30px,6vw,40px);
     height: auto;
     transition: transform 0.15s ease, fill 0.15s ease;
 }

@@ -110,7 +110,7 @@
 }
 
 .techno-projet .icon {
-    width: clamp(25px,6vw,40px);
+    width: clamp(30px,6vw,40px);
     height: auto;
     transition: transform 0.15s ease, fill 0.15s ease;
 }
