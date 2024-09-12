@@ -1,6 +1,6 @@
 .project-card {
-    width: 380px;
-    height: 480px;
+    width: clamp(330px, 60vw, 380px);
+    height: clamp(450px, 90vw, 480px);;
     background-color: #03062C88; 
     display: flex;
     flex-direction: column;
@@ -73,7 +73,7 @@
 
 .description-projet h1 {
     color: #8FA9CA;
-    font-size: 18px;
+    font-size: clamp(15px,1vw,18px);
     font-weight: 300;
     text-align: justify;
     margin: 0 0;
@@ -104,19 +104,14 @@
     width: 100%;
 }
 
-.techno-projet .icon {
-    width: 40px;
-    height: 40px;
-}
-
 .techno-projet .icon:hover {
     transform: scale(1.15);
     filter: saturate(2);
 }
 
 .techno-projet .icon {
-    width: 40px;
-    height: 40px;
+    width: clamp(25px,6vw,40px);
+    height: auto;
     transition: transform 0.15s ease, fill 0.15s ease;
 }
 
