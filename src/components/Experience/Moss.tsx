@@ -20,46 +20,47 @@ const Moss = () => {
     return (
       <div className='experience'>
         <div className='texte-image'>
-          <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
             <div className="image-entreprise">
+          <ScrollAnimation translateX={40} translateY={0} speed="0.3s">
               <CustomTooltip title="Voir le site de l'entreprise">
                 <img src={imgLysoft} alt="Image de l'entreprise" onClick={() => window.open("https://www.moss.fr/")}/>
               </CustomTooltip>
+            </ScrollAnimation>
+
             </div>
-          </ScrollAnimation>
           <div className='texte-experience'>
-            <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+            <ScrollAnimation translateX={-100} translateY={0} speed="0.2s">
               <div className="date-entreprise">
                 <h1>2023 - MOSS - domaine de l'aérospatial 🛰️</h1>
               </div>
             </ScrollAnimation>
-            <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+            <ScrollAnimation translateX={-100} translateY={0} speed="0.25s">
               <div className="poste">
                 <h1>Stagiaire Développeur Java Elasticsearch</h1>
               </div>
             </ScrollAnimation>
-            <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+            <ScrollAnimation translateX={-100} translateY={0} speed="0.3s">
               <div className="lieu">
                 <h1>Issy-les-Moulineaux, Paris 🇫🇷</h1>
               </div>
             </ScrollAnimation>
             <div className="experience-bulletpoints">
-              <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+              <ScrollAnimation translateX={-100} translateY={0} speed="0.2s">
                 <h1>• Écriture d’un outil de génération du <YBoldText text="mapping"/> d’Elasticsearch</h1>
               </ScrollAnimation>
-              <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+              <ScrollAnimation translateX={-100} translateY={0} speed="0.25s">
                 <h1>• Automatisation de scripts via le <YBoldText text="Build Lifecycle"/> de Maven</h1>
               </ScrollAnimation>
-              <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+              <ScrollAnimation translateX={-100} translateY={0} speed="0.3s">
                 <h1>• <YBoldText text="Simulations"/> comparatives de <YBoldText text="requêtes API"/></h1>
               </ScrollAnimation>
-              <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+              <ScrollAnimation translateX={-100} translateY={0} speed="0.35s">
                 <h1>• Paramétrage de <YBoldText text="piplines"/> de build du projet</h1>
               </ScrollAnimation>
-              <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+              <ScrollAnimation translateX={-100} translateY={0} speed="0.4s">
                 <h1>• Prise en charge de <YBoldText text="tickets"/> Jira</h1>
               </ScrollAnimation>
-              <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+              <ScrollAnimation translateX={-100} translateY={0} speed="0.45s">
                 <h1>• Participation active aux réunions de gestion de projet <YBoldText text="Scrum"/></h1>
               </ScrollAnimation>
             </div>

@@ -18,59 +18,61 @@ const Lysoft = () => {
     return (
       <div className='experience'>
         <div className='texte-image'>
-          <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
             <div className="image-entreprise">
+          <ScrollAnimation translateX={40} translateY={0} speed="0.3s">
+
               <CustomTooltip title="Voir le site de l'entreprise">
                 <img src={imgLysoft} alt="Image de l'entreprise" onClick={() => window.open("https://lysoft.ch/")} />
               </CustomTooltip>
-            </div>
           </ScrollAnimation>
+
+            </div>
           
           <div className='texte-experience'>
-            <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+            <ScrollAnimation translateX={-100} translateY={0} speed="0.25s">
               <div className="date-entreprise">
                 <h1>2024 - Lysoft SA - domaine des laboratoires médicaux 🧪</h1>
               </div>
             </ScrollAnimation>
 
-            <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+            <ScrollAnimation translateX={-100} translateY={0} speed="0.3s">
               <div className="poste">
                 <h1>Stagiaire Développeur Java</h1>
               </div>
             </ScrollAnimation>
 
-            <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+            <ScrollAnimation translateX={-100} translateY={0} speed="0.35s">
               <div className="lieu">
                 <h1>Plan-les-Ouates, Genève 🇨🇭</h1>
               </div>
             </ScrollAnimation>
 
             <div className="experience-bulletpoints">
-              <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+              <ScrollAnimation translateX={-100} translateY={0} speed="0.25s">
                 <h1>• Création d’un outil de traduction avec un <YBoldText text="Scanner"/> et un <YBoldText text="Parser"/></h1>
               </ScrollAnimation>
               
-              <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+              <ScrollAnimation translateX={-100} translateY={0} speed="0.3s">
                 <h1>• Utilisation de <YBoldText text="linters"/> pour améliorer la <YBoldText text="qualité"/> du code</h1>
               </ScrollAnimation>
 
-              <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+              <ScrollAnimation translateX={-100} translateY={0} speed="0.35s">
                 <h1>• <YBoldText text="Amélioration"/> de la <YBoldText text="vitesse"/> de génération des fichiers source</h1>
               </ScrollAnimation>
 
-              <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+              <ScrollAnimation translateX={-100} translateY={0} speed="0.4s">
                 <h1>• Utilisation d'outils de <YBoldText text="Data Visualization"/> pour la prise de décision</h1>
               </ScrollAnimation>
 
-              <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+              <ScrollAnimation translateX={-100} translateY={0} speed="0.45s">
                 <h1>• Application de la norme <YBoldText text="Conventional Commits"/> pour les commits</h1>
               </ScrollAnimation>
 
-              <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+              <ScrollAnimation translateX={-100} translateY={0} speed="0.5s">
                 <h1>• Utilisation approfondie du <YBoldText text="débugger"/> sur IntelliJ </h1>
               </ScrollAnimation>
 
-              <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+              <ScrollAnimation translateX={-100} translateY={0} speed="0.55s">
                 <h1>• Écriture de <YBoldText text="tests unitaires"/> et de tests de <YBoldText text="non-régression"/></h1>
               </ScrollAnimation>
             </div>

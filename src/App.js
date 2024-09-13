@@ -6,6 +6,7 @@ import ScrollAnimation from './components/ScrollAnimation.tsx';
 
 import Canvas from './components/Home/Canvas.tsx';
 import HomeInfos from './components/Home/HomeInfos.tsx';
+import { ReactComponent as DownArrow } from './assets/down-arrow.svg';
 
 import Lysoft from './components/Experience/Lysoft.tsx';
 import Moss from './components/Experience/Moss.tsx';
@@ -42,6 +43,11 @@ function App() {
       <div className="home-container" ref={homeRef}>
         <Canvas className="canvas"/>
         <HomeInfos className="HomeInfos"/>
+        <div className='down-arrow' onClick={() => scrollToSection(experiencesRef)}>
+          <ScrollAnimation translateX={0} translateY={-50} speed="1.5s">
+            <DownArrow/>
+          </ScrollAnimation>
+        </div>
       </div>
 
       <div className="experiences-container" ref={experiencesRef}>

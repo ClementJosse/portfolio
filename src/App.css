@@ -3,7 +3,7 @@
 }
 
 .home-container {
-  position: relative; /* Maintient la structure normale pour permettre à la div suivante de s'afficher */
+  position: relative; /* Nécessaire pour que les enfants puissent se positionner */
   width: 100%;
   min-height: 100vh; /* Prend toute la hauteur de la fenêtre */
   z-index: 1;
@@ -12,6 +12,29 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Permet d'éloigner les éléments entre eux */
+}
+
+.down-arrow {
+  position: absolute; /* Permet de positionner précisément l'élément */
+  bottom: 50px; /* Distance depuis le bas de la page */
+  left: 50%; /* Centre horizontalement */
+  transform: translateX(-50%); /* Centre l'élément en ajustant son déplacement */
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+
+.down-arrow svg {
+  width: 100%;
+  height: 100%;
 }
 
 .experiences-container{

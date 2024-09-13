@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
+import ScrollAnimation from './ScrollAnimation.tsx';
 
 function Navbar({ scrollToSection, homeRef, experiencesRef, projectsRef, competencesRef}) {
   const [activeSection, setActiveSection] = useState('home'); // Initialiser avec "home"
@@ -43,31 +44,44 @@ function Navbar({ scrollToSection, homeRef, experiencesRef, projectsRef, compete
   }, [homeRef, experiencesRef, projectsRef, competencesRef, activeSection]);
 
   return (
+
     <div className='navbar-container'>
+      <ScrollAnimation translateX={0} translateY={-50} speed="0.3s">
       <h1
         className={`navbar-button ${activeSection === 'home' ? 'active' : ''}`}
         onClick={() => scrollToSection(homeRef)}
       >
         Home
       </h1>
+      </ScrollAnimation>
+
+      <ScrollAnimation translateX={0} translateY={-50} speed="0.4s">
       <h1
         className={`navbar-button ${activeSection === 'experiences' ? 'active' : ''}`}
         onClick={() => scrollToSection(experiencesRef)}
       >
         Expériences
       </h1>
+      </ScrollAnimation>
+
+      <ScrollAnimation translateX={0} translateY={-50} speed="0.5s">
       <h1
         className={`navbar-button ${activeSection === 'projects' ? 'active' : ''}`}
         onClick={() => scrollToSection(projectsRef)}
       >
         Projets
       </h1>
+      </ScrollAnimation>
+      
+      <ScrollAnimation translateX={0} translateY={-50} speed="0.6s">
       <h1
         className={`navbar-button ${activeSection === 'competences' ? 'active' : ''}`}
         onClick={() => scrollToSection(competencesRef)}
       >
         Compétences
       </h1>
+      </ScrollAnimation>
+
     </div>
   );
 }
