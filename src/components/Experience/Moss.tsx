@@ -12,6 +12,7 @@ import { ReactComponent as Git } from '../../assets/techno/Git.svg';
 import { ReactComponent as Jira } from '../../assets/techno/Jira.svg';
 import CustomTooltip from '../CustomTooltip.tsx';
 import YBoldText from '../YBoldText.tsx';
+import ScrollAnimation from '../ScrollAnimation.tsx';
 import "../SectionTitle.css";
 import "./Experience.css"
 
@@ -19,65 +20,114 @@ const Moss = () => {
     return (
       <div className='experience'>
         <div className='texte-image'>
+          <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
             <div className="image-entreprise">
               <CustomTooltip title="Voir le site de l'entreprise">
                 <img src={imgLysoft} alt="Image de l'entreprise" onClick={() => window.open("https://www.moss.fr/")}/>
               </CustomTooltip>
             </div>
+          </ScrollAnimation>
           <div className='texte-experience'>
-            <div className="date-entreprise">
-              <h1>2023 - MOSS - domaine de l'aérospatial 🛰️</h1>
-            </div>
-            <div className="poste">
-              <h1>Stagiaire Développeur Java Elasticsearch</h1>
-            </div>
-            <div className="lieu">
-              <h1>Issy-les-Moulineaux, Paris 🇫🇷</h1>
-            </div>
+            <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+              <div className="date-entreprise">
+                <h1>2023 - MOSS - domaine de l'aérospatial 🛰️</h1>
+              </div>
+            </ScrollAnimation>
+            <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+              <div className="poste">
+                <h1>Stagiaire Développeur Java Elasticsearch</h1>
+              </div>
+            </ScrollAnimation>
+            <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+              <div className="lieu">
+                <h1>Issy-les-Moulineaux, Paris 🇫🇷</h1>
+              </div>
+            </ScrollAnimation>
             <div className="experience-bulletpoints">
-              <h1>• Écriture d’un outil de génération du <YBoldText text="mapping"/> d’Elasticsearch</h1>
-              <h1>• Automatisation de scripts via le <YBoldText text="Build Lifecycle"/> de Maven</h1>
-              <h1>• <YBoldText text="Simulations"/> comparatives de <YBoldText text="requêtes API"/></h1>
-              <h1>• Paramétrage de <YBoldText text="piplines"/> de build du projet</h1>
-              <h1>• Prise en charge de <YBoldText text="tickets"/> Jira</h1>
-              <h1>• Participation active aux réunions de gestion de projet <YBoldText text="Scrum"/></h1>
+              <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+                <h1>• Écriture d’un outil de génération du <YBoldText text="mapping"/> d’Elasticsearch</h1>
+              </ScrollAnimation>
+              <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+                <h1>• Automatisation de scripts via le <YBoldText text="Build Lifecycle"/> de Maven</h1>
+              </ScrollAnimation>
+              <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+                <h1>• <YBoldText text="Simulations"/> comparatives de <YBoldText text="requêtes API"/></h1>
+              </ScrollAnimation>
+              <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+                <h1>• Paramétrage de <YBoldText text="piplines"/> de build du projet</h1>
+              </ScrollAnimation>
+              <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+                <h1>• Prise en charge de <YBoldText text="tickets"/> Jira</h1>
+              </ScrollAnimation>
+              <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+                <h1>• Participation active aux réunions de gestion de projet <YBoldText text="Scrum"/></h1>
+              </ScrollAnimation>
             </div>
           </div>
         </div>
         <div className='technos'>
           <div className='row'>
-            <CustomTooltip title="Java">
-              <Java className="icon"/>
-            </CustomTooltip>
-            <CustomTooltip title="Maven">
-              <Maven className="icon"/>
-            </CustomTooltip>
-            <CustomTooltip title="IntelliJ">
-              <IntelliJ className="icon"/>
-            </CustomTooltip>
-            <CustomTooltip title="Bash">
-              <Bash className="icon"/>
-            </CustomTooltip>
-            <CustomTooltip title="Git">
-              <Git className="icon"/>
-            </CustomTooltip>
+            <ScrollAnimation translateX={0} translateY={100} speed="0.2s">
+              <CustomTooltip title="Java">
+                <Java className="icon"/>
+              </CustomTooltip>
+            </ScrollAnimation>
+
+            <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
+              <CustomTooltip title="Maven">
+                <Maven className="icon"/>
+              </CustomTooltip>
+            </ScrollAnimation>
+
+            <ScrollAnimation translateX={0} translateY={100} speed="0.4s">
+              <CustomTooltip title="IntelliJ">
+                <IntelliJ className="icon"/>
+              </CustomTooltip>
+            </ScrollAnimation>
+
+            <ScrollAnimation translateX={0} translateY={100} speed="0.5s">
+              <CustomTooltip title="Bash">
+                <Bash className="icon"/>
+              </CustomTooltip>
+            </ScrollAnimation>
+
+            <ScrollAnimation translateX={0} translateY={100} speed="0.6s">
+              <CustomTooltip title="Git">
+                <Git className="icon"/>
+              </CustomTooltip>
+            </ScrollAnimation>
+
           </div>
           <div className='row'>
-            <CustomTooltip title="Elasticsearch">
-              <Elasticsearch className="icon"/>
-            </CustomTooltip>
-            <CustomTooltip title="Swagger">
-              <Swagger className="icon"/>
-            </CustomTooltip>
-            <CustomTooltip title="Postman">
-              <Postman className="icon"/>
-            </CustomTooltip>
-            <CustomTooltip title="Jenkins">
-              <Jenkins className="icon"/>
-            </CustomTooltip>
-            <CustomTooltip title="Jira">
-              <Jira className="icon"/>
-            </CustomTooltip>
+            <ScrollAnimation translateX={0} translateY={100} speed="0.7s">
+              <CustomTooltip title="Elasticsearch">
+                <Elasticsearch className="icon"/>
+              </CustomTooltip>
+            </ScrollAnimation>
+
+            <ScrollAnimation translateX={0} translateY={100} speed="0.8s">
+              <CustomTooltip title="Swagger">
+                <Swagger className="icon"/>
+              </CustomTooltip>
+            </ScrollAnimation>
+            
+            <ScrollAnimation translateX={0} translateY={100} speed="0.9s">
+              <CustomTooltip title="Postman">
+                <Postman className="icon"/>
+              </CustomTooltip>
+            </ScrollAnimation>
+
+            <ScrollAnimation translateX={0} translateY={100} speed="1s">
+              <CustomTooltip title="Jenkins">
+                <Jenkins className="icon"/>
+              </CustomTooltip>
+            </ScrollAnimation>
+
+            <ScrollAnimation translateX={0} translateY={100} speed="1.1s">
+              <CustomTooltip title="Jira">
+                <Jira className="icon"/>
+              </CustomTooltip>
+            </ScrollAnimation>
           </div>
         </div>
       </div>

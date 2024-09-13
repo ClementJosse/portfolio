@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollAnimation from '../ScrollAnimation.tsx';
 import { ReactComponent as Java } from '../../assets/techno/Java.svg';
 import { ReactComponent as Maven } from '../../assets/techno/Maven.svg';
 import { ReactComponent as Spring } from '../../assets/techno/Spring.svg';
@@ -20,50 +21,91 @@ import CustomTooltip from '../CustomTooltip.tsx';
 
 const Backend = () => {
     return (
+      <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
         <div className="competence-box backend">
             <h1>Backend</h1>
             <div className='techno-competences'>
+
+              <ScrollAnimation translateX={0} translateY={100} speed="0.35s">
                 <CustomTooltip title="Java">
                   <Java className="icon"/>
                 </CustomTooltip>
+              </ScrollAnimation>
+                
+              <ScrollAnimation translateX={0} translateY={100} speed="0.4s">
                 <CustomTooltip title="Maven">
                   <Maven className="icon"/>
                 </CustomTooltip>
+              </ScrollAnimation>
+
+              <ScrollAnimation translateX={0} translateY={100} speed="0.45s">
                 <CustomTooltip title="Spring">
                   <Spring className="icon"/>
                 </CustomTooltip>
+              </ScrollAnimation>
+                
+              <ScrollAnimation translateX={0} translateY={100} speed="0.5s">
                 <CustomTooltip title="Python">
                   <Python className="icon"/>
                 </CustomTooltip>
+              </ScrollAnimation>
+
+              <ScrollAnimation translateX={0} translateY={100} speed="0.55s">
                 <CustomTooltip title="Bash">
                   <Bash className="icon"/>
                 </CustomTooltip>
+              </ScrollAnimation>
+
+              <ScrollAnimation translateX={0} translateY={100} speed="0.6s">
                 <CustomTooltip title="MySQL">
                   <MySQL className="icon"/>
                 </CustomTooltip>
+              </ScrollAnimation>
+
+              <ScrollAnimation translateX={0} translateY={100} speed="0.65s">
                 <CustomTooltip title="PostgreSQL">
                   <PostgreSQL className="icon"/>
-                </CustomTooltip>
+                </CustomTooltip> 
+              </ScrollAnimation>
+
+              <ScrollAnimation translateX={0} translateY={100} speed="0.7s">
                 <CustomTooltip title="MongoDB">
                   <MongoDB className="icon"/>
                 </CustomTooltip>
+              </ScrollAnimation>
+
+              <ScrollAnimation translateX={0} translateY={100} speed="0.75s">
                 <CustomTooltip title="ElasticSearch">
                   <ElasticSearch className="icon"/>
                 </CustomTooltip>
+              </ScrollAnimation>
+
+              <ScrollAnimation translateX={0} translateY={100} speed="0.8s">
                 <CustomTooltip title="Firebase">
                   <Firebase className="icon"/>
                 </CustomTooltip>
+              </ScrollAnimation>
+
+              <ScrollAnimation translateX={0} translateY={100} speed="0.85s">
                 <CustomTooltip title="Postman">
                   <Postman className="icon"/>
                 </CustomTooltip>
+              </ScrollAnimation>
+
+              <ScrollAnimation translateX={0} translateY={100} speed="0.9s">
                 <CustomTooltip title="Swagger">
                   <Swagger className="icon"/>
                 </CustomTooltip>
+              </ScrollAnimation>
+
+              <ScrollAnimation translateX={0} translateY={100} speed="0.95s">
                 <CustomTooltip title="Insomnia">
                   <Insomnia className="icon"/>
                 </CustomTooltip>
+              </ScrollAnimation>
             </div>
         </div>
+      </ScrollAnimation>
     );
 };
 

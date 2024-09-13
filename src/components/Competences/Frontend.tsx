@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollAnimation from '../ScrollAnimation.tsx';
 import { ReactComponent as Figma } from '../../assets/techno/Figma.svg';
 import { ReactComponent as CorelVector } from '../../assets/techno/CorelVector.svg';
 import { ReactComponent as JavaScript } from '../../assets/techno/JavaScript.svg';
@@ -13,32 +14,54 @@ import CustomTooltip from '../CustomTooltip.tsx';
 
 const Frontend = () => {
     return (
+      <ScrollAnimation translateX={0} translateY={100} speed="0.3s">
         <div className="competence-box frontend">
             <h1>Design & Frontend</h1>
             <div className='techno-competences'>
-                <CustomTooltip title="Figma">
-                  <Figma className="icon"/>
-                </CustomTooltip>
-                <CustomTooltip title="Corel Vector">
-                  <CorelVector className="icon"/>
-                </CustomTooltip>
-                <CustomTooltip title="JavaScript">
-                  <JavaScript className="icon"/>
-                </CustomTooltip>
-                <CustomTooltip title="TypeScript">
-                  <TypeScript className="icon"/>
-                </CustomTooltip>
-                <CustomTooltip title="ReactJS">
-                  <Reactlogo className="icon"/>
-                </CustomTooltip>
-                <CustomTooltip title="Tailwind">
-                  <Tailwind className="icon"/>
-                </CustomTooltip>
-                <CustomTooltip title="Expo">
-                  <Expo className="icon"/>
-                </CustomTooltip>
+                <ScrollAnimation translateX={0} translateY={100} speed="0.35s">
+                  <CustomTooltip title="Figma">
+                    <Figma className="icon"/>
+                  </CustomTooltip>
+                </ScrollAnimation>
+
+                <ScrollAnimation translateX={0} translateY={100} speed="0.4s">
+                  <CustomTooltip title="Corel Vector">
+                    <CorelVector className="icon"/>
+                  </CustomTooltip>
+                </ScrollAnimation>
+
+                <ScrollAnimation translateX={0} translateY={100} speed="0.45s">
+                  <CustomTooltip title="JavaScript">
+                    <JavaScript className="icon"/>
+                  </CustomTooltip>
+                </ScrollAnimation>
+
+                <ScrollAnimation translateX={0} translateY={100} speed="0.5s">
+                  <CustomTooltip title="TypeScript">
+                    <TypeScript className="icon"/>
+                  </CustomTooltip>
+                </ScrollAnimation>
+
+                <ScrollAnimation translateX={0} translateY={100} speed="0.55s">
+                  <CustomTooltip title="ReactJS">
+                    <Reactlogo className="icon"/>
+                  </CustomTooltip>
+                </ScrollAnimation>
+
+                <ScrollAnimation translateX={0} translateY={100} speed="0.6s">
+                  <CustomTooltip title="Tailwind">
+                    <Tailwind className="icon"/>
+                  </CustomTooltip>
+                </ScrollAnimation>
+
+                <ScrollAnimation translateX={0} translateY={100} speed="0.65s">
+                  <CustomTooltip title="Expo">
+                    <Expo className="icon"/>
+                  </CustomTooltip>
+                </ScrollAnimation>
             </div>
         </div>
+      </ScrollAnimation>
     );
 };
 
