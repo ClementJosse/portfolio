@@ -19,13 +19,11 @@ const Lysoft = () => {
       <div className='experience'>
         <div className='texte-image'>
             <div className="image-entreprise">
-          <ScrollAnimation translateX={40} translateY={0} speed="0.3s">
-
-              <CustomTooltip title="Voir le site de l'entreprise">
-                <img src={imgLysoft} alt="Image de l'entreprise" onClick={() => window.open("https://lysoft.ch/")} />
-              </CustomTooltip>
-          </ScrollAnimation>
-
+              <ScrollAnimation translateX={40} translateY={0} speed="0.3s">
+                <CustomTooltip title="Voir le site de l'entreprise">
+                  <img src={imgLysoft} alt="Image de l'entreprise" onClick={() => window.open("https://lysoft.ch/")} />
+                </CustomTooltip>
+              </ScrollAnimation>
             </div>
           
           <div className='texte-experience'>
