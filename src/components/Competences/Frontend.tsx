@@ -8,7 +8,6 @@ import { ReactComponent as Reactlogo } from '../../assets/techno/React.svg';
 import { ReactComponent as Angular } from '../../assets/techno/Angular.svg';
 import { ReactComponent as VueJS } from '../../assets/techno/Vue.svg';
 import { ReactComponent as Tailwind } from '../../assets/techno/Tailwind.svg';
-import { ReactComponent as NodeJS } from '../../assets/techno/NodeJS.svg';
 import { ReactComponent as Expo } from '../../assets/techno/Expo.svg';
 import CustomTooltip from '../CustomTooltip.tsx';
 

@@ -63,7 +63,7 @@
 }
 
 .projects-container {
-  height: 1350px;
+  height: 2000px;
   background: radial-gradient(circle, #01407B 0%, #001B55 50%, #070027 100%);
   position: relative; /* Nécessaire pour le positionnement des couches parallaxe */
   overflow: hidden; /* Assure que les couches parallaxe ne débordent pas */
@@ -135,7 +135,7 @@
       height: 1750px; 
   }
   .projects-container {
-    height: 1850px;
+    height: 2850px;
   }
   .projects-list {
     grid-template-columns: repeat(2, 380px); /* 3 colonnes de largeur égale */

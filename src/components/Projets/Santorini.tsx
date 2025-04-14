@@ -5,7 +5,6 @@ import YBoldText from '../YBoldText.tsx';
 import CustomTooltip from '../CustomTooltip.tsx';
 import { ReactComponent as Reacticon } from '../../assets/techno/React.svg';
 import { ReactComponent as Firebase } from '../../assets/techno/Firebase.svg';
-import { ReactComponent as NodeJS } from '../../assets/techno/NodeJS.svg';
 import { ReactComponent as Expo } from '../../assets/techno/Expo.svg';
 
 const Santorini = () => {
@@ -34,9 +33,6 @@ const Santorini = () => {
                     <h1><YBoldText text="multijoueur"/> en ligne en <YBoldText text="temps réel"/></h1>
                 </div>
                 <div className='techno-projet'>
-                    <CustomTooltip title="NodeJS">
-                      <NodeJS className="icon"/>
-                    </CustomTooltip>
                     <CustomTooltip title="React Native">
                       <Reacticon className="icon"/>
                     </CustomTooltip>

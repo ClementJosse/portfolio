@@ -11,6 +11,10 @@ import { ReactComponent as DownArrow } from './assets/down-arrow.svg';
 import Lysoft from './components/Experience/Lysoft.tsx';
 import Moss from './components/Experience/Moss.tsx';
 
+import Links from './components/Projets/Links.tsx';
+import Loupgarou from './components/Projets/Loupgarou.tsx';
+import Scorescrabble from './components/Projets/Scorescrabble.tsx';
+import Dicoscrabble from './components/Projets/Dicoscrabble.tsx';
 import Portfolio from './components/Projets/Portfolio.tsx';
 import Citymo from './components/Projets/Citymo.tsx';
 import Velib from './components/Projets/Velib.tsx';
@@ -62,6 +66,23 @@ function App() {
         <NavbarGap/>
         <SectionTitle title={"Mes Projets"}/>
         <div className='projects-list'>
+
+          <ScrollAnimation translateX={0} translateY={100} speed="0.2s">
+            <Links/>
+          </ScrollAnimation>
+
+          <ScrollAnimation translateX={0} translateY={100} speed="0.2s">
+            <Loupgarou/>
+          </ScrollAnimation>
+          
+          <ScrollAnimation translateX={0} translateY={100} speed="0.4s">
+            <Scorescrabble/>
+          </ScrollAnimation>
+        
+          <ScrollAnimation translateX={0} translateY={100} speed="0.6s">
+            <Dicoscrabble/>
+          </ScrollAnimation>
+
           <ScrollAnimation translateX={0} translateY={100} speed="0.2s">
             <Portfolio/>
           </ScrollAnimation>
@@ -82,10 +103,11 @@ function App() {
             <Checkfumi/>
           </ScrollAnimation>
           
+          {/*
           <ScrollAnimation translateX={0} translateY={100} speed="0.7s">
             <Autres/>
           </ScrollAnimation>
-          
+          */}
         </div>
       </div>
       <div className="competences-container" ref={competencesRef}>
