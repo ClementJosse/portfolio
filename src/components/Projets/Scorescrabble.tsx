@@ -23,7 +23,7 @@ const Scorescrabble = () => {
             </div>
             <div className='texte-projet'>
                 <div className='date-projet'>
-                    <h1>2023</h1>
+                    <h1>2024</h1>
                 </div>
                 <div className='titre-projet'>
                     <h1>Score Scrabble</h1>
